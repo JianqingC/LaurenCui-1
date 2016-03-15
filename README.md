@@ -1,9 +1,4 @@
-# About Jianqing Cui
-
-####Education 
-Oregon State University  *Computer Science*
-
-Oregon State University  *Mechancial Engineering*
+# About Me
 
 ####Languages and Skills
 
