@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<link rel = "stylesheet" href = "css/style.css">
 	<title>Jianqing Resume</title>
 </head>
 <body>
 <header>
 <h1>Jianqing Cui</h1>
+<h5>Junior Software Engineer or Junior Web-Developer</h5>
 </header>
-<div>
+
 <nav>
 	<a href="#about">About</a>
 	<a href="#skills">Skills</a>
@@ -15,28 +18,52 @@
 	<a href="#about">Education</a>
 	<a href="#projects">Projects</a>
 </nav>
-</div>
+
 <main>
-<div id = "about">
+<div class = "row">
+<div id = "about" class="about">
 <h3>About</h3>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<ul>
+	<li>Name: Jianqing Cui (Lauren)</li>
+	<li>Phone: +1 510-309-9127</li>
+	<li>Email: lauren7cui@gmail.com</li>
+	<li>Education
+		<!--hide: until click-->
+		<ul>
+			<li>Master. Computer Science. Oregon State University</li>
+			<li>Master. Mechanical Engineering. Oregon State University</li>
+		</ul>
+		<!--hide: until click-->
+	</li>
+</ul>
 </div>
-<div id = "skills">
+<div id = "skills" class="skills">
 <h3>Skills</h3>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<table>
+	<tr><th>Skill Type</th><th>Language</th></tr>
+	<tr><td>Objective Oriented Language</td><td>Java,C#,C++</td></tr>
+	<tr><td>Website Dev</td><td>HTML,Javascript,PHP,CSS</td></tr>
+	<tr><td>Scripting Language</td><td>Python,C,Bash Script</td></tr>
+	<tr><td>Database</td><td>MySQL,SQL</td></tr>
+</table>
 </div>
-<div id = "experiences">
+</div>
+<div class="row">
+<div id = "experiences" class="experiences">
 <h3>Experiences</h3>
+<table>
+	<tr><td>Android Application Developer</td><td class = "bluebkgrnd">2013.08-2013.10</td></tr>
+	<tr><td>Programmer</td><td class="bluebkgrnd">2014.07-Now</td></tr>
+</table>
+</div>
+<div id = "projects" class="projects">
+<h3>Projects</h3>
+<ul>
+	<li>Java</li>
+	<li>Website Development</li>
+	<li>C and Python</li>
+</ul>
+<div class = "test">
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -44,14 +71,37 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </div>
-<div id = "projects">
-<h3>Projects</h3>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<!--<ul>
+	<li>
+		Thesis
+		<ul>
+			<li>Java</li>
+			<li>Implemented a graphic processing plugin, which is designed to help identifying deformed material by comparing pictures from original to deformed one</li>
+		</ul>
+	</li>
+	<li>
+		Web Dev: Movie Recommendation
+		<ul>
+			<li>HTML,PHP,Javascript,MySQL</li>
+			<li>A website provides registered user recommendation of movies based on their preference history</li>
+		</ul>
+	</li>
+	<li>
+		Operating System Projects
+		<ul>
+			<li>C, Python</li>
+			<li>Multiple projects about I/O file and socket management.</li>
+		</ul>
+	</li>
+	<li>
+		Linux GUIs comparison using Empirical Method
+		<ul>
+			<li>Debian Linux, R</li>
+			<li>A term research project of comparing Linux Gnome and KDE system using empirical method.</li>
+		</ul>
+	</li>
+</ul>-->
+</div>
 </div>
 </main>
 <footer>jianqing cui resume | 2016 </footer>

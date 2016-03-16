@@ -1,0 +1,82 @@
+header{
+	text-align: center;
+}
+
+nav{
+	width: 96%;
+	margin: 0 2%;
+}
+
+main{
+	width: 96%;
+	margin: 0 2%;
+	border-width: 1px;
+	border-style: dotted;
+}
+
+.row{
+	width: 100%;
+	display: flex;
+	justify-content: center ;
+}
+
+.row h3,h5{
+	color: black;
+	margin: 0;
+}
+
+.row ul{
+	margin-top: 0;
+}
+.row div{
+	border-width: 1px;
+	border-style: solid;
+	margin: 2%;
+}
+
+.row table{
+	color: black;
+	margin: 0 1%;
+}
+
+.row td{
+	width: 50%;
+}
+.bluebkgrnd{
+	background-color: blue;
+	color: white;
+	text-align:right;
+	flex:1;
+}
+.about{
+	flex:1;
+
+}
+.skills{
+	flex:2;
+}
+.experiences{
+	flex:2;
+}
+.experiences table{
+	display: flex;
+}
+.experiences td{
+	flex:2 ;
+	margin: 2px;
+	border: 1px solid black;
+}
+.test{
+	position: absolute;
+	left: 50%;
+    top: 50%;
+    background-color: cadetblue;
+    opacity: 0.9;
+}
+.projects{
+	flex:1;
+}
+footer{
+	text-align: center;
+}
+
