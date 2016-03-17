@@ -42,12 +42,7 @@ main{
 .row td{
 	width: 50%;
 }
-.bluebkgrnd{
-	background-color: blue;
-	color: white;
-	text-align:right;
-	flex:1;
-}
+
 .about{
 	flex:1;
 
@@ -58,23 +53,56 @@ main{
 .experiences{
 	flex:2;
 }
-.experiences table{
-	display: flex;
+.experiences p{
+	background-color: white;
 }
-.experiences td{
-	flex:2 ;
-	margin: 2px;
-	border: 1px solid black;
+#job1,#job2{
+	position: relative;
 }
-.test{
+#job1:hover #job-1{
+	display: block;
+}
+#job-1,#job-2{
+	display: none;
 	position: absolute;
-	left: 50%;
-    top: 50%;
+	top:10%;
+	left:10%;
     background-color: cadetblue;
     opacity: 0.9;
 }
+#job2:hover #job-2{
+	display: block;
+}
+.bluebkgrnd{
+	background-color: lightblue;
+	color: cadetblue;
+	text-align:right;
+	float:right;
+	position: relative;
+	transform: translateY(-10px);
+	top:-10%;
+	}
 .projects{
 	flex:1;
+}
+#java-projects,#web-projects,#os-projects{
+	position: relative;
+}
+#java-projects:hover #proj-java{
+	display: block;
+}
+#proj-java,#proj-web, #proj-os{
+	display: none;
+	position: absolute;
+	top:-1%;
+    background-color: cadetblue;
+    opacity: 0.9;
+}
+#web-projects:hover #proj-web{
+	display: block;
+}
+#os-projects:hover #proj-os{
+	display: block;
 }
 footer{
 	text-align: center;
