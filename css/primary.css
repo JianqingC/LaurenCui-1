@@ -51,7 +51,7 @@ main{
 	flex:2;
 }
 .experiences{
-	flex:2;
+	flex:1;
 }
 .experiences p{
 	background-color: white;
@@ -59,20 +59,20 @@ main{
 #job1,#job2{
 	position: relative;
 }
-#job1:hover #job-1{
-	display: block;
-}
 #job-1,#job-2{
-	display: none;
+	/*display: none;*/
 	position: absolute;
 	top:10%;
 	left:10%;
     background-color: cadetblue;
     opacity: 0.9;
 }
-#job2:hover #job-2{
+/*#job1:hover #job-1{
 	display: block;
 }
+#job2:hover #job-2{
+	display: block;
+}*/
 .bluebkgrnd{
 	background-color: lightblue;
 	color: cadetblue;
@@ -87,23 +87,42 @@ main{
 }
 #java-projects,#web-projects,#os-projects{
 	position: relative;
+	opacity: 1;
+}
+#proj-java,#proj-web, #proj-os{
+	width: 50%;
+	position: absolute;
+	top:-1%;
+	left:-1%;
+    background-color: cadetblue;
+    /*opacity: 0.99;*/
+}
+/*#java-projects,#web-projects,#os-projects{
+	position: relative;
+	opacity: 1;
 }
 #java-projects:hover #proj-java{
 	display: block;
 }
 #proj-java,#proj-web, #proj-os{
+	width: 50%;
 	display: none;
 	position: absolute;
 	top:-1%;
+	left:-1%;
     background-color: cadetblue;
-    opacity: 0.9;
+    opacity: 0.99;
+}
+#proj-java.open{
+	height: 200px;
+	transition: height, 1s linear;
 }
 #web-projects:hover #proj-web{
 	display: block;
 }
 #os-projects:hover #proj-os{
 	display: block;
-}
+}*/
 footer{
 	text-align: center;
 }
