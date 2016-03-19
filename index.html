@@ -57,7 +57,7 @@
 <p id = "job1" onclick= "ShowBlock('job-1','job-2')">
 	<b>Android Application Developer</b>
 	<span class = "bluebkgrnd">2013.08-2013.10</span>
-	<span id = "job-1" style="visibility:hidden">
+	<span id = "job-1" style = "display:none">
 		China,Telecom
 		<br>
 		Appilication development
@@ -67,7 +67,7 @@
 <p id = "job2" onclick= "ShowBlock('job-2','job-1')">
 	<b>Programmer</b>
 	<span class="bluebkgrnd">2014.07-Now</span>
-	<span id = "job-2" style="visibility:hidden">
+	<span id = "job-2" style = "display:none">
 		Oregon State University
 		<br>
 		Wave,FireSim
@@ -78,19 +78,19 @@
 <div id = "projects" class="projects">
 <h3>Projects</h3>
 <ul>
-	<li id = "java-projects" onclick= "ShowBlock('proj-java','proj-web','proj-os')">Java
-	<div id = "proj-java" style="visibility:hidden">
+	<li id = "java-projects" onclick = "ShowBlock('proj-java','proj-web','proj-os')">Java
+	<div id = "proj-java" style = "display:none;">
 		Thesis
 		<ul>
 			<li>Java</li>
 			<li>Implemented a graphic processing plugin, which is designed to help identifying deformed material by comparing pictures from original to deformed one</li>
 			<li><a href="https://github.com/LaurenCui/Thesis" target="_blank">Source Page</a></li>
 		</ul>
-		<button  onmousedown = "HiddenBlock('proj-java')" type="button" >close</button>
+		<button  onmousedown = "HiddenBlock('proj-java')" type = "button" >close</button>
 	</div>
 	</li>
 	<li id = "web-projects" onclick= "ShowBlock('proj-web','proj-java','proj-os')">Website Development
-	<div id = "proj-web" style="visibility:hidden">
+	<div id = "proj-web" style = "display:none">
 		Web Dev: Movie Recommendation
 		<ul>
 			<li>HTML,PHP,Javascript,MySQL</li>
@@ -101,7 +101,7 @@
 	</div>
 	</li>
 	<li id = "os-projects" onclick= "ShowBlock('proj-os','proj-web','proj-java')">C and Python
-	<div id = "proj-os" style="visibility:hidden">
+	<div id = "proj-os" style = "display:none">
 		Operating System Projects
 		<ul>
 			<li>C, Python</li>

@@ -95,7 +95,7 @@ main{
 	top:-1%;
 	left:-1%;
     background-color: cadetblue;
-    opacity: 0.99;
+    /*opacity: 0.99;*/
 }
 /*#java-projects,#web-projects,#os-projects{
 	position: relative;
