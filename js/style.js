@@ -1,6 +1,3 @@
-$("#job1").animate({opacity:'0.4'},200);
-$("#proj-java").slideDown('slow');
-
 function ShowBlock(){
 	//document.getElementById(arguments[0]).setAttribute("style","display:visible");
 	Fade(arguments[0],true);
@@ -12,8 +9,8 @@ function ShowBlock(){
 }
 
 function HiddenBlock(BlockId){	
-	//document.getElementById(BlockId).setAttribute("style","display:none");
-	Fade(BlockId,false);
+	document.getElementById(BlockId).setAttribute("style","display:none");
+	//Fade(BlockId,false);
 }
 
 
@@ -30,8 +27,6 @@ function Fade(BlockId,flag) {
      		setTimeout(function(){Fading(BlockId,flag);}, 50);
 		});
 	}
-    
-    
     //var int_id = setInterval(function(){Fading(BlockId,flag);}, 50);
 
 }
@@ -57,7 +52,6 @@ function Fading(BlockId,flag){
 	    	console.log("finish");
 	    }
     }
-    
 }
 
 

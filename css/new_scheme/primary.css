@@ -7,13 +7,13 @@ header{
 }
 
 header h1{
-	color: cornflowerblue;
+	color: #b87c96;
 	font-weight: bold;
 }
 
 header h5{
-	margin:1% 0;
-	color:darkslategrey;
+	margin: 1% 0;
+	color: #b87c96;
 }
 
 nav{
@@ -26,17 +26,17 @@ nav{
 
 /* unvisited link */
 nav a:link {
-    color: darkslategrey;
+    color: #4e603c;
 }
 
 /* visited link */
 nav a:visited {
-    color: darkslategrey;
+    color: #4e603c;
 }
 
 /* mouse over link */
 nav a:hover {
-    color: darkcyan;
+    color: #5b3947;
 }
 
 nav a{
@@ -46,22 +46,22 @@ main{
 	width: 96%;
 	margin: 0 2%;
 	color:#264040;
-	background-color: #b6e1fc;
+	background-color: #c0c7ba;
 }
 
 /* unvisited link */
 main a:link {
-    color: darkseagreen;
+    color: #af07ae;
 }
 
 /* visited link */
 main a:visited {
-    color: darkseagreen;
+    color: #af07ae;
 }
 
 /* mouse over link */
 main a:hover {
-    color: darkcyan;
+    color: #5eb807;
 }
 
 .row{
@@ -80,7 +80,6 @@ main a:hover {
 }
 .row div{
 	margin: 0.5%;
-	background-color: #c4e3ed;
 }
 
 .row table{
@@ -97,19 +96,46 @@ main a:hover {
 .about{
 	flex:1;
 	padding: 2%;
+	background-color: #b86c96;
+	color: #41001b;
+}
+
+.about h3{
+	color: #bf0050;
 }
 
 .skills{
 	flex:2;
 	padding: 2%;
+	background-color: #b3c988;
+	color: #2f4700;
+}
+
+.skills h3{
+	color: #7dac20;
 }
 
 .experiences{
 	flex:1;
 	padding: 2%;
+	background-color: #9ec182;
+	color: #2f4700;
 }
 
-.experiences p{
+.experiences h3{
+	color: #7dac20;
+}
+
+.projects{
+	flex:1;
+	padding: 2%;
+	background-color: #b86c96;
+	color: #41001b;
+	min-height: 200px;
+}
+
+.projects h3{
+	color: #bf0050;
 }
 
 #job1,#job2{
@@ -121,8 +147,8 @@ main a:hover {
 	position: absolute;
 	top:10%;
 	left:10%;
-    background-color: darkslategrey;
-    color: tan;
+    background-color: #f3c1d6;
+    color: #241f21;
     opacity: 0.9;
     padding: 2%;
     z-index: 1;
@@ -130,17 +156,10 @@ main a:hover {
 }
 
 .experiences button{
-	background-color: #53655b;
-	color:darkorange;
+	background-color: #bff995;
+	color: #241f21;
 	float:right;
 }
-
-/*#job1:hover #job-1{
-	display: block;
-}
-#job2:hover #job-2{
-	display: block;
-}*/
 
 .bluebkgrnd{
 	color: #43705a;
@@ -152,14 +171,9 @@ main a:hover {
 	top:-10%;
 }
 
-.projects{
-	flex:1;
-	padding: 2%;
-}
-
 .projects button{
-	background-color: #53655b;
-	color:darkorange;
+	background-color: #f794be;
+	color:#232621;
 	float:right;
 }
 
@@ -174,40 +188,15 @@ main a:hover {
 	position: absolute;
 	top:10%;
 	left:10%;
-    background-color: darkslategrey;
-    color: tan;
+    background-color: #d8f5c3;
+    color: #232621;
     padding: 2%;
     /*opacity: 0.99;*/
 }
-/*#java-projects,#web-projects,#os-projects{
-	position: relative;
-	opacity: 1;
-}
-#java-projects:hover #proj-java{
-	display: block;
-}
-#proj-java,#proj-web, #proj-os{
-	width: 50%;
-	display: none;
-	position: absolute;
-	top:-1%;
-	left:-1%;
-    background-color: cadetblue;
-    opacity: 0.99;
-}
-#proj-java.open{
-	height: 200px;
-	transition: height, 1s linear;
-}
-#web-projects:hover #proj-web{
-	display: block;
-}
-#os-projects:hover #proj-os{
-	display: block;
-}*/
+
 footer{
 	text-align: center;
-	color: darkslategrey;
+	color: #b87c96;
 	/*background-color: #e2cfb6;*/
 	margin: 0 2%;
 }

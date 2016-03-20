@@ -4,8 +4,8 @@ header{
 
 body{
 	margin: 5%;
-	color:#264040;
-	background-color: #b6e1fc;
+	color: #203604;
+	background-color: #e0e6d9;/*#a98d98;*/
 }
 
 nav{
@@ -21,27 +21,27 @@ nav{
 }
 
 h1{
-	color: #006080;
+	color: #769450;
 	font-weight: bold;
 }
 
 h3,h5{
 	margin:1% 0;
-	color: #006080;
+	color: #73002f;
 }
 /* unvisited link */
 a:link {
-    color: teal;
+    color: #3c8400;
 }
 
 /* visited link */
 a:visited {
-    color: teal;
+    color: #3c8400;
 }
 
 /* mouse over link */
 a:hover {
-    color: darkcyan;
+    color: #bf013b;
 }
 
 .bluebkgrnd{
@@ -59,11 +59,12 @@ a:hover {
 }
 
 button{
-	background-color: lightblue;
-	color: darkslategray;
+	background-color: #9acc71;
+	color: #d92f63;
 	float:right;
 }
 
 footer{
 	text-align: center;
+	color: #2d5f00;
 }

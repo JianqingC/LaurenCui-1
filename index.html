@@ -2,8 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel = "stylesheet" href = "css/primary.css"  media="screen and (min-width: 835px)">
-	<link rel = "stylesheet" href = "css/secondary.css"  >
+	<link rel = "stylesheet" href = "css/new_scheme/primary.css"  media="screen and (min-width: 835px)">
+	<link rel = "stylesheet" href = "css/new_scheme/secondary.css"  media="screen and (max-width: 835px)">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script type="text/javascript" src = "js/style.js"></script>
 	<title>Jianqing Resume</title>
@@ -55,24 +55,28 @@
 <div id = "experiences" class="experiences">
 <h3>Experiences</h3>
 <p id = "job1" onclick= "ShowBlock('job-1','job-2')">
-	<b>Android Application Developer</b>
+	Android Application Developer
 	<span class = "bluebkgrnd">2013.08-2013.10</span>
 	<span id = "job-1" style = "display:none">
-		China,Telecom
+		China Telecom
 		<br>
-		Appilication development
+		Appilication development:<br>
+		Participated developing To-Do-List Application<br>
+		Java<br>
 		<button  onmousedown = "HiddenBlock('job-1')" type="button" >close</button>
 	</span>
 </p>
 <p id = "job2" onclick= "ShowBlock('job-2','job-1')">
-	<b>Programmer</b>
+	Programmer
 	<span class="bluebkgrnd">2014.07-Now</span>
 	<span id = "job-2" style = "display:none">
 		Oregon State University
 		<br>
-		Wave,FireSim
+		<b>Wave Project</b> Participated to develop a virtual education world for teenage participant learning nutrition knowladge using <b>C#</b>  and <b>Mysql,PHP</b>  on OpenSim platform
+		<br>
+		<b>FireSim</b> Participated to develop a fire escape simulation for research use, using <b>C++</b>  on Unreal Engine.<br>
 		<button  onmousedown = "HiddenBlock('job-2')" type="button" >close</button>
-		</span>
+	</span>
 </p>
 </div>
 <div id = "projects" class="projects">
