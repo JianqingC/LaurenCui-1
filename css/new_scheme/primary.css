@@ -36,7 +36,8 @@ nav a:visited {
 
 /* mouse over link */
 nav a:hover {
-    color: #5b3947;
+    color: #bf0050;
+    /*#5b3947;*/
 }
 
 nav a{
@@ -47,6 +48,8 @@ main{
 	margin: 0 2%;
 	color:#264040;
 	background-color: #c0c7ba;
+	border: 0px none;
+    border-radius: 5px;
 }
 
 /* unvisited link */
@@ -80,6 +83,8 @@ main a:hover {
 }
 .row div{
 	margin: 0.5%;
+	border: 0px none;
+    border-radius: 5px;
 }
 
 .row table{
@@ -145,20 +150,28 @@ main a:hover {
 #job-1,#job-2{
 	/*display: none;*/
 	position: absolute;
-	top:10%;
-	left:10%;
+	top:30%;
+	left:20%;
     background-color: #f3c1d6;
     color: #241f21;
     opacity: 0.9;
     padding: 2%;
     z-index: 1;
-    text-indent: 50px;
+
+    height: 600%;/*parent p-span*/
+   	width: 80%;
+    overflow: auto;
+}
+
+#job-1,#job-2 ul{
+	margin: 5%;
 }
 
 .experiences button{
 	background-color: #bff995;
 	color: #241f21;
-	float:right;
+	width:15%;
+	margin: 1% 0 1% 80%;
 }
 
 .bluebkgrnd{
@@ -174,7 +187,8 @@ main a:hover {
 .projects button{
 	background-color: #f794be;
 	color:#232621;
-	float:right;
+	width:15%;
+	margin: 1% 0 1% 80%;
 }
 
 #java-projects,#web-projects,#os-projects{
@@ -192,12 +206,15 @@ main a:hover {
     color: #232621;
     padding: 2%;
     /*opacity: 0.99;*/
+
+    height: 300%;/*parent ul-li*/
+   	width: 80%;
+    overflow: auto;
 }
 
 footer{
 	text-align: center;
 	color: #b87c96;
-	/*background-color: #e2cfb6;*/
 	margin: 0 2%;
 }
 

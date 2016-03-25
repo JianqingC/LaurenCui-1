@@ -166,7 +166,7 @@ main a:hover {
 #java-projects,#web-projects,#os-projects{
 	position: relative;
 	opacity: 1;
-	padding: 2%
+	padding: 2;
 }
 
 #proj-java,#proj-web, #proj-os{
@@ -177,7 +177,6 @@ main a:hover {
     background-color: darkslategrey;
     color: tan;
     padding: 2%;
-    /*opacity: 0.99;*/
 }
 /*#java-projects,#web-projects,#os-projects{
 	position: relative;
