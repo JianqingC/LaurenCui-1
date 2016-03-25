@@ -9,8 +9,7 @@ function ShowBlock(){
 }
 
 function HiddenBlock(BlockId){	
-	document.getElementById(BlockId).setAttribute("style","display:none");
-	//Fade(BlockId,false);
+	$("#"+BlockId).fadeOut();
 }
 
 
@@ -27,8 +26,6 @@ function Fade(BlockId,flag) {
      		setTimeout(function(){Fading(BlockId,flag);}, 50);
 		});
 	}
-    //var int_id = setInterval(function(){Fading(BlockId,flag);}, 50);
-
 }
 
 function Fading(BlockId,flag){

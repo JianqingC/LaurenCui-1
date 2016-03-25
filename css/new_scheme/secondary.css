@@ -49,6 +49,25 @@ a:hover {
 	position: relative;
 }
 
+#skill-table{
+	width: 80%;
+	margin: auto 10%;
+	padding: 2%;
+}
+
+#skill-table td{
+	padding: auto 3%;
+	/*background-color: salmon;*/
+}
+
+#education{
+	display:none;
+}
+
+#education-list:hover #education{
+	display:block;
+}
+
 #java-projects,#web-projects,#os-projects{
 	opacity: 1;
 	padding: 2%;
@@ -61,10 +80,14 @@ a:hover {
 button{
 	background-color: #9acc71;
 	color: #d92f63;
-	float:right;
+	width:15%;
+	margin: 1% 0 1% 80%;
+
 }
 
 footer{
+	border-top: dotted;
+	border-width: 1px;
 	text-align: center;
 	color: #2d5f00;
 }

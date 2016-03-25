@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<link rel = "stylesheet" href = "css/new_scheme/primary.css"  media="screen and (min-width: 835px)">
 	<link rel = "stylesheet" href = "css/new_scheme/secondary.css"  media="screen and (max-width: 835px)">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
 	<script type="text/javascript" src = "js/style.js"></script>
 	<title>Jianqing Resume</title>
 </head>
@@ -30,9 +30,9 @@
 	<li>Name: Jianqing Cui (Lauren)</li>
 	<li>Phone: +1 510-309-9127</li>
 	<li>Email: lauren7cui@gmail.com</li>
-	<li>Education
-		<!--hide: until click-->
-		<ul>
+	<li id = "education-list">Education
+		<!--hide: small size page until click-->
+		<ul id = "education">
 			<li>Master. Computer Science. Oregon State University</li>
 			<li>Master. Mechanical Engineering. Oregon State University</li>
 		</ul>
@@ -42,7 +42,7 @@
 </div>
 <div id = "skills" class="skills">
 <h3>Skills</h3>
-<table>
+<table id = "skill-table">
 	<tr><th>Skill Type</th><th>Language</th></tr>
 	<tr><td>Objective Oriented Language</td><td>Java,C#,C++</td></tr>
 	<tr><td>Website Dev</td><td>HTML,Javascript,PHP,CSS</td></tr>
@@ -55,26 +55,25 @@
 <div id = "experiences" class="experiences">
 <h3>Experiences</h3>
 <p id = "job1" onclick= "ShowBlock('job-1','job-2')">
-	Android Application Developer
+	<b>Android Application Developer</b>, China Telecom
 	<span class = "bluebkgrnd">2013.08-2013.10</span>
 	<span id = "job-1" style = "display:none">
-		China Telecom
-		<br>
 		Appilication development:<br>
 		Participated developing To-Do-List Application<br>
-		Java<br>
+		Developing Platform: Java<br>
 		<button  onmousedown = "HiddenBlock('job-1')" type="button" >close</button>
 	</span>
 </p>
 <p id = "job2" onclick= "ShowBlock('job-2','job-1')">
-	Programmer
+	<b>Programmer</b>, Oregon State University
 	<span class="bluebkgrnd">2014.07-Now</span>
 	<span id = "job-2" style = "display:none">
-		Oregon State University
-		<br>
-		<b>Wave Project</b> Participated to develop a virtual education world for teenage participant learning nutrition knowladge using <b>C#</b>  and <b>Mysql,PHP</b>  on OpenSim platform
-		<br>
-		<b>FireSim</b> Participated to develop a fire escape simulation for research use, using <b>C++</b>  on Unreal Engine.<br>
+		<b>Wave Project</b> Participated to develop a virtual education world for teenage participant learning nutrition knowladge.<br/>
+		Developing Platform: <b>C#</b>  and <b>Mysql,PHP</b>  on OpenSim platform
+		<br/>
+		<br/>
+		<b>FireSim</b> Participated to develop a fire escape simulation for research use<br/>
+		Developing Platform: <b>C++</b>  on Unreal Engine.
 		<button  onmousedown = "HiddenBlock('job-2')" type="button" >close</button>
 	</span>
 </p>
@@ -88,7 +87,7 @@
 		<ul>
 			<li>Java</li>
 			<li>Implemented a graphic processing plugin, which is designed to help identifying deformed material by comparing pictures from original to deformed one</li>
-			<li><a href="https://github.com/LaurenCui/Thesis" target="_blank">Source Page</a></li>
+			<li><a href="https://github.com/LaurenCui/Thesis" target="_blank">Project Github Source</a></li>
 		</ul>
 		<button  onmousedown = "HiddenBlock('proj-java')" type = "button" >close</button>
 	</div>
@@ -99,6 +98,7 @@
 		<ul>
 			<li>HTML,PHP,Javascript,MySQL</li>
 			<li>A website provides registered user recommendation of movies based on their preference history</li>
+			<li><a href="https://github.com/LaurenCui/JS_Proj-movie" target="_blank">Project Github Source</a></li>
 			<li><a href="http://laurencui.github.io/JS_Proj-movie/" target="_blank">Demo Page</a></li>
 		</ul>
 		<button  onmousedown = "HiddenBlock('proj-web')" type="button" >close</button>
@@ -117,6 +117,7 @@
 			<li>A term research project of comparing Linux Gnome and KDE system using empirical method.</li>
 		</ul>
 		<button  onmousedown = "HiddenBlock('proj-os')" type="button" >close</button>
+		
 	</div>
 	</li>
 </ul>
