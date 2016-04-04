@@ -2,10 +2,6 @@
 ###Page
 [color ok?](http://laurencui.github.io/JianqingCui/)
 
-##Pages:
-
-[color ok?](http://laurencui.github.io/JianqingCui/)
-
 ####Languages and Skills
 
    Language Type     | Languages
