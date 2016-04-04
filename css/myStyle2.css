@@ -1,0 +1,12 @@
+.col4,.col4r{
+	width:85%;
+	float:right;
+	display:none;
+}
+.col4 div>button, .col4r div>button{
+	float:right;
+}
+
+.mySider{
+	margin-top,margin-bottom:50px;
+}

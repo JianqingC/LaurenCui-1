@@ -1,0 +1,18 @@
+.col4{
+	width:30%;
+	float:left;
+}
+.col4r{
+	width:30%;
+	float:right;
+}
+.col4 div, .col4r div{
+	display:none;
+}
+.col4 div>button, .col4r div>button{
+	float:right;
+}
+.col4 h3, .col4r h3{
+	/*override part*/
+	font-size: 400%;
+}
