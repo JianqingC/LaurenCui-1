@@ -2,10 +2,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel = "stylesheet" href = "css/new_scheme/primary.css"  media="screen and (min-width: 835px)">
-	<link rel = "stylesheet" href = "css/new_scheme/secondary.css"  media="screen and (max-width: 835px)">
+	<link rel = "stylesheet" href = "static/css/new_scheme/primary.css"  media="screen and (min-width: 835px)">
+	<link rel = "stylesheet" href = "static/css/new_scheme/secondary.css"  media="screen and (max-width: 835px)">
 	<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
-	<script type="text/javascript" src = "js/style.js"></script>
+	<script type="text/javascript" src = "static/js/style.js"></script>
 	<title>Jianqing Resume</title>
 </head>
 <body>
@@ -27,9 +27,9 @@
 <div id = "about" class="about">
 <h3>About</h3>
 <ul>
-	<li>Name: Jianqing Cui (Lauren)</li>
+	<li>Name: Jianqing "Lauren" Cui </li>
 	<li>Phone: +1 510-309-9127</li>
-	<li>Email: lauren7cui@gmail.com</li>
+	<li>Email: <a href="mailto:lauren7cui@gmail.com">lauren7cui@gmail.com</a></li>
 	<li id = "education-list">Education
 		<!--hide: small size page until click-->
 		<ul id = "education">
@@ -41,14 +41,16 @@
 </ul>
 </div>
 <div id = "skills" class="skills">
-<h3>Skills</h3>
-<table id = "skill-table">
-	<tr><th>Skill Type</th><th>Language</th></tr>
-	<tr><td>Objective Oriented Language</td><td>Java,C#,C++</td></tr>
-	<tr><td>Website Dev</td><td>HTML,Javascript,PHP,CSS</td></tr>
-	<tr><td>Scripting Language</td><td>Python,C,Bash Script</td></tr>
-	<tr><td>Database</td><td>MySQL,SQL</td></tr>
-</table>
+	<h3>Skills and Resume Snap</h3>
+	<table id = "skill-table">
+		<tr><th>Skill Type</th><th>Language</th></tr>
+		<tr><td>Objective Oriented Language</td><td>Java,C#,C++</td></tr>
+		<tr><td>Website Dev</td><td>HTML,Javascript,PHP,CSS</td></tr>
+		<tr><td>Scripting Language</td><td>Python,C,Bash Script</td></tr>
+		<tr><td>Database</td><td>MySQL,SQL</td></tr>
+	</table>
+	<object id = "resume" data="files/Resume_Jianqing Cui.pdf" class="pdf" type="application/pdf"  width="80%" height="80%"></object>
+	<a href="files/Resume_Jianqing Cui.pdf" target="_blank">Read more</a>
 </div>
 </div>
 <div class="row">
@@ -66,7 +68,7 @@
 </p>
 <p id = "job2" onclick= "ShowBlock('job-2','job-1')">
 	<b>Programmer</b>, Oregon State University
-	<span class="bluebkgrnd">2014.07-Now</span>
+	<span class="bluebkgrnd">2014.07-2016.04</span>
 	<span id = "job-2" style = "display:none">
 		<b>Wave Project</b> Participated to develop a virtual education world for teenage participant learning nutrition knowladge.<br/>
 		Developing Platform: <b>C#</b>  and <b>Mysql,PHP</b>  on OpenSim platform
