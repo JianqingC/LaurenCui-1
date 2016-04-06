@@ -1,9 +1,38 @@
+main{
+    margin: auto;
+    flex-flow: center;
+}
+
+.myrow{
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    /*centering*/
+    /*width:100vw;
+    height:100vw;*/
+}
+
+.myrow-top{
+    align-items: flex-start;/*center;*/
+}
+
+.myrow-bottom{
+    align-items: flex-end;/*center;*/
+}
 
 .cir-container{
     padding: 0%; 
-    width: 300px;/*300px*/
-    height: 300px; /*300px*/
+    width: 25vw;/*300px*/
+    height: 25vw; /*300px*/
     z-index: 0;
+    position: relative;
+
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*text centering*/
 }
 .color-circle{
     border-radius: 50%;
@@ -18,12 +47,22 @@
     display: -webkit-flex;
     display: flex;
     /*centering*/
+    align-items: center;
+    justify-content: center;
+    /*text centering*/
 }
 .cir-text{
     display: -webkit-flex;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    /*text centering*/
+
     margin: auto;
-    /*centering*/
+     /*centering*/
+    text-align: center;
+    vertical-align: middle ;
+   
     overflow: auto;
     
     width: 70%;
@@ -32,8 +71,40 @@
     position: relative;
     padding:5%;
 
-    /*debug*/
-    background-color: grey;
+    /*debug
+    background-color: grey;*/
+}
+
+.cir-text div{
+    display:none;
+}
+.cir-text h3{
+    /*override part*/
+    font-size: 100%;
+     /*centering*/
+    text-align: center;
+    vertical-align: middle ;
+}
+
+.cir-content{
+    text-align: center;
+    vertical-align: middle ;
+    margin: auto;
+    /*text centering*/
+    overflow: auto;
+    z-index: 10;/*absolute top*/
+}
+
+.cir-content ul{
+    font-size: 100%;
+    margin: 1%;
+    list-style-position: inside;
+    text-align: left;
+    padding: 0;
+}
+
+.cir-content ul li{
+    margin: 1%;
 }
 
 .col4{
@@ -42,15 +113,9 @@
 .col4r{
 	float:right;
 }
-.cir-text div, .cir-text div{
-	display:none;
-}
+
 .col4 div>button, .col4r div>button{
 	float:right;
-}
-.col4 h3, .col4r h3{
-	/*override part*/
-	font-size: 400%;
 }
 
 .grn{
@@ -60,10 +125,4 @@
 	background: salmon;
 }
 
-.myrow{
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    /*centering*/
-    width:100%;
-}
+
