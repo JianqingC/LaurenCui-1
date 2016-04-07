@@ -1,6 +1,6 @@
 # About Me
 ###Page
-[First Draft](http://laurencui.github.io/JianqingCui/)
+[First Dialating Version](http://laurencui.github.io/JianqingCui/)
 
 ####Languages and Skills
 
