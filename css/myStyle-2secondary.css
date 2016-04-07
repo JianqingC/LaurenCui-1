@@ -1,7 +1,12 @@
-main{
-    margin: auto;
-    flex-flow: center;
+body{
+    min-width: 100px;
+    background-color: #E7DFAD;
 }
+
+header{
+    margin-left: 5%;
+}
+
 
 .myrow{
     display: -webkit-flex;
@@ -14,17 +19,19 @@ main{
 }
 
 .myrow-top{
-    align-items: flex-start;/*center;*/
+    /*align-items: flex-start;center;*/
 }
 
 .myrow-bottom{
-    align-items: flex-end;/*center;*/
+    /*align-items: flex-end;center;*/
 }
+
 
 .cir-container{
     padding: 0%; 
-    width: 25vw;/*300px*/
-    height: 25vw; /*300px*/
+    margin:auto;
+    width: 15vw;/* 300px */
+    height: 15vw; /*300px*/
     z-index: 0;
     position: relative;
 
@@ -35,7 +42,7 @@ main{
     /*text centering*/
 }
 .color-circle{
-    border-radius: 50%;
+    border-radius: 0%;
     /*circling background*/
     
     margin: 0;
@@ -65,14 +72,14 @@ main{
    
     overflow: auto;
     
-    width: 70%;
-    height: 70%; 
+    width: 100%;
+    height: 100%; 
     z-index: 2;
     position: relative;
     padding:5%;
 
     /*debug
-    background-color: grey;*/
+    background-color: lightgrey;*/
 }
 
 .cir-text div{
@@ -111,7 +118,7 @@ main{
 	float:left;
 }
 .col4r{
-	float:right;
+    float:right;
 }
 
 .col4 div>button, .col4r div>button{
@@ -119,10 +126,13 @@ main{
 }
 
 .grn{
-	background: #73AD21;
+	/*background: #73AD21;*/
 }
 .rd{
-	background: salmon;
+	/*background: salmon;*/
 }
 
 
+footer{
+    text-align: center;
+}

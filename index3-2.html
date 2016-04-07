@@ -14,11 +14,12 @@
     <script src="/Users/jianqingcui/Documents/CODE/Web-Dev/Lib/Chart.js-master/Chart.js"></script>
 
     <!--my style-->
-	<link href="css/myStyle-2.css"rel="stylesheet">
+	<link href="css/myStyle-2primary.css"rel="stylesheet" media="screen and (min-width: 760px)">
+	<link href="css/myStyle-2secondary.css"rel="stylesheet" media="screen and (max-width: 759px)">
 
 	<title>My Page</title>
 </head>
-<body class = "container">
+<body ><!--class = "container">-->
 <header>
 <h1>Jianqing "Lauren" Cui</h1>
 <h5>Junior front-end Developer</h5>
@@ -27,7 +28,7 @@
 <main>
 <div class = "myrow myrow-bottom">
 	<div id = "about" class="cir-container col4">
-	<div class = "color-circle rd">
+	<div class = "color-circle grn">
 		<div class = "cir-text">
 		<h3 class = "title">About</h3>
 		<div class = "cir-content">
@@ -55,7 +56,16 @@
 				<h3 class = "title">Resume</h3>
 				<div class = "cir-content">
 					<button type = "button" class = "btn btn-xs glyphicon glyphicon-remove"></button>
-					<object width= "100%" height= "100%" data="files/Resume_Jianqing_Cui.pdf"></object>
+					<table id = "skill-table">
+						<tr><th>Skill Type</th><th>Language</th></tr>
+						<tr><td>Objective Oriented Language</td><td>Java,C#,C++</td></tr>
+						<tr><td>Website Dev</td><td>HTML,Javascript,PHP,CSS</td></tr>
+						<tr><td>Scripting Language</td><td>Python,C,Bash Script</td></tr>
+						<tr><td>Database</td><td>MySQL,SQL</td></tr>
+					</table>
+					<object width= "100%" height= "100%" data="files/Resume_Jianqing_Cui.pdf">
+						<a href="files/Resume_Jianqing_Cui.pdf" target="_blank">Resume PDF(click for opening in a new tab)</a>
+					</object>
 				</div>
 			</div>
 		</div>
@@ -98,7 +108,7 @@
 		</div>
 	</div>
 	<div id = "projects" class="cir-container col4r">
-		<div class = "color-circle rd">
+		<div class = "color-circle grn">
 			<div class = "cir-text">
 				<h3 class = "title">Projects</h3>
 				<div class = "cir-content">
@@ -152,8 +162,11 @@
 </main>
 <footer class = "footer"><p class="text-muted">jianqing cui resume | 2016 </p></footer>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
+  	<!-- Underscore -->
+    <script type="text/javascript" src = "http://underscorejs.org/underscore-min.js"></script>
     <script src="/Users/jianqingcui/Documents/CODE/Web-Dev/Lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript" src="js/myStyle-2.js"></script>
+    <script type="text/javascript" src="js/myStyle-2primary.js" media="screen and (min-width: 600px)"></script>
+    <!--<script type="text/javascript" src="js/myStyle-2secondary.js" media="screen and (max-width: 599px)"></script>Doesn't work this way-->
 </body>
 </html>
