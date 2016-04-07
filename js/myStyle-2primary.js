@@ -137,10 +137,14 @@ $("button.glyphicon-remove").click(function() {
 	}
 });
 
-function showBlock(){
+function showToggle(){
+	$("#"+arguments[0]).toggle('blind');
+}
+
+/*function showBlock(){
 	//hide other part  of same block: not only the details
 	//first change all the cir-content block display to none
-	if($(window).width()>=600){
+	if($(window).width()>=750){
 		$("#"+arguments[0]).parent().children().css("display","none");//fadeOut();
 	}
 	//then make the part appear
@@ -149,7 +153,7 @@ function showBlock(){
 
 function hiddenBlock(){	
 	$("#"+arguments[0]).fadeOut();
-	if($(window).width()>=600){
+	if($(window).width()>=750){
 		var children = $("#"+arguments[0]).parent().children();
 		
 		for (var i = 0; i < children.length ; i++) {
@@ -161,7 +165,7 @@ function hiddenBlock(){
 		}
 	}
 	
-}
+}*/
 
 $(window).resize(_.throttle(function(){
 	//all container size change
@@ -190,7 +194,7 @@ $(window).resize(_.throttle(function(){
 				//detail open one: >=750: if detail open: other detail-title closed
 				$(m).css("width",growupW.toString()+'px');
 				$(m).css("height",growupW.toString()+'px');
-				var detailTL = $(m).find(".detail-title");
+				/*var detailTL = $(m).find(".detail-title");
 				var detailL = $(m).find(".detail");
 				if(detailTL.length >0 && detailL.length > 0){
 					var j;
@@ -218,7 +222,7 @@ $(window).resize(_.throttle(function(){
 							}
 						}
 					}
-				}
+				}*/
 				
 			}else{
 				if(rowW>=750){
