@@ -61,3 +61,9 @@ function Fading(BlockId,flag){
 	    }
     }
 }
+
+$("#enlarge").click(function() {
+	//$(this).parent().children("div").css("display","block");
+	$(this).css("width","300px");
+	$(this).css("height","300px");
+});
