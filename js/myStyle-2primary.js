@@ -33,8 +33,9 @@ $(".cir-container").click(function() {
 	//the small original size will be 25%?
 	var originalW = Math.round(rowW*percentO);//by 5 for in case
 	var growupW = Math.round(rowW*percentG);
-	console.log("click title: this width "+ $(this).width()+" row width: "+ rowW + " original: " + originalW + " enlarge: "+ growupW);
-	if($(this).width()-originalW<=1 /*&& rowW>=600*/){
+	
+	if($(this).width()-originalW<=1){//
+		console.log("click title: this width "+ $(this).width()+" row width: "+ rowW + " original: " + originalW + " enlarge: "+ growupW);
 		//first restore all same container size
 		var nodeL = $("main").find("div.cir-container");
 		for(var i = 0; i<4; i++){
@@ -43,7 +44,18 @@ $(".cir-container").click(function() {
 			$(m).css("height",originalW.toString()+'px');
 			$(m).find(".cir-content").css("display","none");
 			$(m).find(".title").css("display","block");
+			//also make sure detail list are closed
+			var detailL = $(m).find(".detail");
+			var j;
+			for(j = 0; j< detailL.length; j++){
+				$(detailL[j]).fadeOut();
+			}
+			var detailL = $(m).find(".detail-title");
+			for(j = 0; j< detailL.length; j++){
+				$(detailL[j]).fadeIn();
+			}
 		}
+
 		if(rowW>=750){
 			$("#"+curID).find(".title").css("display","none");
 			
@@ -95,7 +107,7 @@ $("button.glyphicon-remove").click(function() {
 	var $blk = $(this).parent().parent().parent().parent(); // find original col-md-4 div
 	var blkID = $blk.attr("id");
 	console.log($("#"+blkID).width());
-	if($("#"+blkID).width() <= growupW){
+	if($("#"+blkID).width() > originalW*2){
 		if(rowW>=750){
 			$("#"+blkID).animate({height: originalW.toString()+'px', width: originalW.toString()+'px'}, "slow");
 			var cntid = $("#"+blkID).find(".cir-content");
@@ -108,15 +120,15 @@ $("button.glyphicon-remove").click(function() {
 				$(m).css('margin','');
 			}
 		}else if(rowW <750){
-
 			var cntid = $("#"+blkID).find(".cir-content");
 			$(cntid).fadeOut();
-			$("#"+blkID).animate({height: originalW.toString()+'px', width: originalW.toString()+'px'}, "slow");
 			//re-show all other block
 			var nodeL = $("main").find("div.cir-container");
 			for(var i = 0; i<4; i++){
 				var m = nodeL[i];
 				$(m).css('display','flex');
+				$(m).css('margin','auto');
+				$(m).animate({height: originalW.toString()+'px', width: originalW.toString()+'px'}, "slow");
 			}
 			$("#"+blkID).find(".title").css('display','block');
 		}
@@ -150,21 +162,6 @@ function hiddenBlock(){
 	
 }
 
-/*function ShowBlock(){
-	$("#"+arguments[0]).fadeIn();
-	//alse nned checkn other block is closed
-	for (var i = arguments.length - 1; i > 0; i--) {
-		document.getElementById(arguments[i]).setAttribute("style","display:none");
-	}
-	//also hide other part  of same block: not only the details
-}
-
-function HiddenBlock(BlockId){	
-	var blkID = "#"+BlockId;
-	$(blkID).fadeOut();
-}*/
-
-
 $(window).resize(_.throttle(function(){
 	//all container size change
 	var rowW = $(window).width();//$(".myrow").width();
@@ -177,29 +174,70 @@ $(window).resize(_.throttle(function(){
 	//the small original size will be 25%?
 	var originalW = Math.round(rowW*percentO);//by 5 for in case
 	var growupW = Math.round(rowW*percentG);
-	//if(rowW >= 600){
-		//first restore all same container size
-		var nodeL = $.makeArray($("main").find("div.cir-container"));//Object!!!!!!
-		var nodeLw=[];
-		nodeL.forEach(function(m){nodeLw.push($(m).width());});
-		if(Math.max(...nodeLw)-Math.min(...nodeLw)<1 || _.filter(nodeLw, function(num){ return num == Math.max(...nodeLw); }).length >1){
-			//no block open
-			nodeL.forEach(function(m){
-				$(m).css("width",originalW.toString()+'px');
-				$(m).css("height",originalW.toString()+'px');
-				var nodeL = $("main").find("div.cir-container");
-				$(m).css('margin','');
-			});
-		}else{
-			nodeL.forEach(function(m){
-				if($(m).width() === Math.max(...nodeLw)){
-					$(m).css("width",growupW.toString()+'px');
-					$(m).css("height",growupW.toString()+'px');
-				}else{
+	//first restore all same container size
+	var nodeL = $.makeArray($("main").find("div.cir-container"));//Object!!!!!!
+	//above using the width of the container to determine whether a block been clicked
+	//now try using check title class been hide or not 
+	var nodeLt = [];
+	nodeL.forEach(function(m){var t = $(m).find('.title'); if(t.length == 1){nodeLt.push($(t).css('display'));} });
+	console.log(nodeLt);
+	if(_.filter(nodeLt,function(t){return t === 'none';}).length == 1){
+		//there is one container been clicked and open
+		nodeL.forEach(function(m){
+			if($(m).find('.title').css('display')=='none'){
+				//detail open one: >=750: if detail open: other detail-title closed
+				$(m).css("width",growupW.toString()+'px');
+				$(m).css("height",growupW.toString()+'px');
+				var detailTL = $(m).find(".detail-title");
+				var detailL = $(m).find(".detail");
+				if(detailTL.length >0 && detailL.length > 0){
+					var j;
+					//check whether there is detail opened
+					var detailLb = [];
+					if(detailL.length > 1){
+						for(j = 0; j< detailL.length; j++){
+							detailLb.push($(detailL[j]).css('display'));
+						}
+					}else{
+						detailLb.push($(detailL).css('display'));
+					}
+					//only need reset the display when one of detail is poped
+					if(!_.isUndefined(_.find(detailLb,function(n){return n == 'block';}))){
+						if(rowW>=750){
+							//detail title hide
+							for(j = 0; j< detailTL.length; j++){
+								$(detailTL[j]).fadeOut();
+							}
+						}else{
+							//detail title show up
+							for(j = 0; j< detailTL.length; j++){
+								$(detailTL[j]).fadeIn();
+							}
+						}
+					}
+				}
+				
+			}else{
+				if(rowW>=750){
+					console.log($(m).attr('id'));
 					$(m).css("width",originalW.toString()+'px');
 					$(m).css("height",originalW.toString()+'px');
+					$(m).css('display','flex');
+					$(m).css('margin','5%');
+				}else{
+					$(m).css('display','none');
+					$(m).css('margin','');
+					//console.log("m is "+m);
 				}
-			});
-		}
-	//}
+			}
+		});
+	}else{
+		//all size set as same only need resize container
+		nodeL.forEach(function(m){
+			$(m).css("width",originalW.toString()+'px');
+			$(m).css("height",originalW.toString()+'px');
+			var nodeL = $("main").find("div.cir-container");
+			$(m).css('margin','');
+		});
+	}
 }, 500));

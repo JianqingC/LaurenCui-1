@@ -121,8 +121,12 @@ header{
     float:right;
 }
 
-.col4 div>button, .col4r div>button{
-	float:right;
+.col4 div>button,.col4r div>button{
+    /*float:right;*/
+    text-align: right;
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
 }
 
 .grn{
@@ -132,6 +136,13 @@ header{
 	/*background: salmon;*/
 }
 
+.detail-title{
+
+}
+
+.detail{
+ color: grey;
+}
 
 footer{
     text-align: center;

@@ -44,6 +44,7 @@ main{
     justify-content: center;
     /*text centering*/
 }
+
 .color-circle{
     border-radius: 50%;
     /*circling background*/
@@ -61,6 +62,7 @@ main{
     justify-content: center;
     /*text centering*/
 }
+
 .cir-text{
     display: -webkit-flex;
     display: flex;
@@ -88,6 +90,7 @@ main{
 .cir-text div{
     display:none;
 }
+
 .cir-text h3{
     /*override part*/
     font-size: 100%;
@@ -124,25 +127,49 @@ main{
 	float:right;
 }
 
-.col4 div>button{
-	float:right;
+.col4 div>button,.col4r div>button{
+	/*float:right;*/
+    text-align: right;
+    margin-left: auto;
+    margin-right: 0;
     display: block;
 }
 
-.col4r div>button{
-    float:left;
+.grn{
+	background-color: #BDB221;/*#3c763d;*/
 }
 
-.grn{
-	background: #BDB221;/*#3c763d;*/
+.grn .detail-title{
+
 }
+
+.grn .detail{
+    color:#634E43;
+}
+
 .rd{
-	background: #f5bca0;/*salmon;*/
+	background-color: #f5bca0;/*salmon;*/
+}
+
+.rd .detail-title{
+
+}
+
+.rd .detail{
+    color:#486343;
 }
 
 .object{
     margin: 0;
     padding: 0;
+}
+
+.grn .detail-title{
+
+}
+
+.red .detail{
+    color:#486343;
 }
 
 footer{
