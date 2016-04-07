@@ -44,6 +44,7 @@ $(".cir-container").click(function() {
 			$(m).css("height",originalW.toString()+'px');
 			$(m).find(".cir-content").css("display","none");
 			$(m).find(".title").css("display","block");
+			$(m).css('margin','');
 			//also make sure detail list are closed
 			var detailL = $(m).find(".detail");
 			var j;
@@ -209,6 +210,7 @@ $(window).resize(_.throttle(function(){
 							for(j = 0; j< detailTL.length; j++){
 								$(detailTL[j]).fadeOut();
 							}
+							$(m).css('margin','');
 						}else{
 							//detail title show up
 							for(j = 0; j< detailTL.length; j++){
@@ -226,6 +228,8 @@ $(window).resize(_.throttle(function(){
 					$(m).css('display','flex');
 					if($(m).parent().attr("class")!=$(nodeLt[0]).parent().attr("class")){
 						$(m).css('margin','5%');
+					}else{
+						$(m).css('margin','');
 					}
 				}else{
 					$(m).css('display','none');

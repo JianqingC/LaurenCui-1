@@ -108,12 +108,12 @@ main{
     z-index: 10;/*absolute top*/
 
     width: 100%;
+    font-size:1.7vw;
 
 }
 
 .cir-content ul{
     width:100%;
-    font-size: 100%;
     margin: 1%;
     list-style-position: inside;
     text-align: left;
@@ -122,6 +122,20 @@ main{
 
 .cir-content ul li{
     margin: 1%;
+}
+
+
+.cir-content table th,td{
+    text-align: left;
+    border-bottom: 1px solid #BDB221;
+    font-size:1.2vw;
+}
+
+/*.cir-content tr:nth-child(even) {background-color: lightgrey;}*/
+
+.cir-content th {
+    background-color: #BDB221;
+    
 }
 
 .col4{
