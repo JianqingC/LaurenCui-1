@@ -12,7 +12,7 @@ function Sizing(BlockId,endingsize){
 		$(BlockID).css("height",(Height-10).toString()+"px");
     	setTimeout(function(){Sizing(BlockId,endingsize);}, 50);
 	}else{
-		if(endingsize==600){
+		if(endingsize==750){
 			$(BlockID).find(".cir-content").fadeIn();
 		}else{
 			$(BlockID).find(".cir-content").fadeOut();
@@ -28,7 +28,7 @@ $(".cir-container").click(function() {
 	var percentG = 0.70;
 	if(rowW>750){
 		percentO = 0.15;
-		percentG = 0.65;
+		percentG = 0.50;
 	}
 	//the small original size will be 25%?
 	var originalW = Math.round(rowW*percentO);//by 5 for in case
@@ -99,7 +99,7 @@ $("button.glyphicon-remove").click(function() {
 	var percentG = 0.70;
 	if(rowW>750){
 		percentO = 0.15;
-		percentG = 0.65;
+		percentG = 0.50;
 	}
 	//the small original size will be 25%?
 	var originalW = Math.round(rowW*percentO);//by 5 for in case
@@ -169,7 +169,7 @@ $(window).resize(_.throttle(function(){
 	var percentG = 0.70;
 	if(rowW>750){
 		percentO = 0.15;
-		percentG = 0.65;
+		percentG = 0.50;
 	}
 	//the small original size will be 25%?
 	var originalW = Math.round(rowW*percentO);//by 5 for in case
@@ -178,13 +178,14 @@ $(window).resize(_.throttle(function(){
 	var nodeL = $.makeArray($("main").find("div.cir-container"));//Object!!!!!!
 	//above using the width of the container to determine whether a block been clicked
 	//now try using check title class been hide or not 
-	var nodeLt = [];
-	nodeL.forEach(function(m){var t = $(m).find('.title'); if(t.length == 1){nodeLt.push($(t).css('display'));} });
-	console.log(nodeLt);
-	if(_.filter(nodeLt,function(t){return t === 'none';}).length == 1){
+	var nodeLt = [];//contain the clicked one  juquery obj
+	nodeL.forEach(function(m){var t = $(m).find('.title'); if(t.length == 1){if($(t).css('display')=='none'){nodeLt.push(m); }} });
+	
+	if(nodeLt.length == 1){
 		//there is one container been clicked and open
 		nodeL.forEach(function(m){
-			if($(m).find('.title').css('display')=='none'){
+			console.log($(m).attr('id') + " ,the clicked one:"+$(nodeLt[0]).attr('id'))
+			if($(m).attr('id')== $(nodeLt[0]).attr('id')){
 				//detail open one: >=750: if detail open: other detail-title closed
 				$(m).css("width",growupW.toString()+'px');
 				$(m).css("height",growupW.toString()+'px');
@@ -223,7 +224,9 @@ $(window).resize(_.throttle(function(){
 					$(m).css("width",originalW.toString()+'px');
 					$(m).css("height",originalW.toString()+'px');
 					$(m).css('display','flex');
-					$(m).css('margin','5%');
+					if($(m).parent().attr("class")!=$(nodeLt[0]).parent().attr("class")){
+						$(m).css('margin','5%');
+					}
 				}else{
 					$(m).css('display','none');
 					$(m).css('margin','');

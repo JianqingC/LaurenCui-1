@@ -91,12 +91,12 @@ main{
     display:none;
 }
 
-.cir-text h3{
+.cir-text .title{
     /*override part*/
     font-size: 100%;
      /*centering*/
     text-align: center;
-    vertical-align: middle ;
+    vertical-align: middle;
 }
 
 .cir-content{
@@ -106,9 +106,13 @@ main{
     /*text centering*/
     overflow: auto;
     z-index: 10;/*absolute top*/
+
+    width: 100%;
+
 }
 
 .cir-content ul{
+    width:100%;
     font-size: 100%;
     margin: 1%;
     list-style-position: inside;
