@@ -141,7 +141,7 @@ function showToggle(){
 	$("#"+arguments[0]).toggle('blind');
 }
 
-function showBlock(){
+/*function showBlock(){
 	//hide other part  of same block: not only the details
 	//first change all the cir-content block display to none
 	if($(window).width()>=750){
@@ -165,7 +165,7 @@ function hiddenBlock(){
 		}
 	}
 	
-}
+}*/
 
 $(window).resize(_.throttle(function(){
 	//all container size change
