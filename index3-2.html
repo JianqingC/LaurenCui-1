@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="/Users/jianqingcui/Documents/CODE/Web-Dev/Lib/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Chart.js-->
+    <script src="/Users/jianqingcui/Documents/CODE/Web-Dev/Lib/Chart.js-master/Chart.js"></script>
+
+    <!--my style-->
+	<link href="css/myStyle-2primary.css"rel="stylesheet" media="screen and (min-width: 760px)">
+	<link href="css/myStyle-2secondary.css"rel="stylesheet" media="screen and (max-width: 759px)">
+
+	<title>My Page</title>
+</head>
+<body ><!--class = "container">-->
+<header>
+<h1>Jianqing "Lauren" Cui</h1>
+<h5>Junior front-end Developer</h5>
+</header>
+
+<main>
+<div class = "myrow myrow-bottom">
+	<div id = "about" class="cir-container col4">
+	<div class = "color-circle grn">
+		<div class = "cir-text">
+		<h3 class = "title">About</h3>
+		<div class = "cir-content">
+			<button type = "button" class = "btn btn-xs glyphicon glyphicon-remove"></button>
+			<ul>
+				<li>Name: Jianqing "Lauren" Cui </li>
+				<li>Phone: +1 510-309-9127</li>
+				<li>Email: <a href="mailto:lauren7cui@gmail.com">lauren7cui@gmail.com</a></li>
+				<li id = "education-list">Education
+					<!--hide: small size page until click-->
+					<ul id = "education">
+						<li>Master. Computer Science. Oregon State University</li>
+						<li>Master. Mechanical Engineering. Oregon State University</li>
+					</ul>
+					<!--hide: until click-->
+				</li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	</div>
+	<div id = "skills" class="cir-container col4r">
+		<div class = "color-circle rd">
+			<div class = "cir-text">
+				<h3 class = "title">Resume</h3>
+				<div class = "cir-content">
+					<button type = "button" class = "btn btn-xs glyphicon glyphicon-remove"></button>
+					<table id = "skill-table">
+						<tr><th>Skill Type</th><th>Language</th></tr>
+						<tr><td>Objective Oriented Language</td><td>Java,C#,C++</td></tr>
+						<tr><td>Website Dev</td><td>HTML,Javascript,PHP,CSS</td></tr>
+						<tr><td>Scripting Language</td><td>Python,C,Bash Script</td></tr>
+						<tr><td>Database</td><td>MySQL,SQL</td></tr>
+					</table>
+					<object width= "100%" height= "100%" data="files/Resume_Jianqing_Cui.pdf">
+						<a href="files/Resume_Jianqing_Cui.pdf" target="_blank">Resume PDF(click for opening in a new tab)</a>
+					</object>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!--first roww-->
+<div class="myrow myrow-top">
+	<div id = "experiences" class="cir-container col4">
+		<div class = "color-circle rd">
+			<div class = "cir-text">
+				<h3 class = "title">Experiences</h3>
+				<div class = "cir-content">
+					<button type = "button" class = "btn btn-xs glyphicon glyphicon-remove"></button>
+					<ul>
+						<li id = "job1" onclick= "showBlock('job-1')" class = "detail-title">
+							<b>Android Application Developer</b>, China Telecom
+							<span class = "bluebkgrnd">2013.08-2013.10</span>
+						</li>
+						<span id = "job-1" style = "display:none" class = "detail">
+							Appilication development:<br>
+							Participated developing To-Do-List Application<br>
+							Developing Platform: Java<br>
+							<button  onclick = "hiddenBlock('job-1')" type="button" >close</button>
+						</span>
+						<li id = "job2" onclick= "showBlock('job-2')" class = "detail-title">
+							<b>Programmer</b>, Oregon State University
+							<span class="bluebkgrnd">2014.07-2016.03</span>
+						</li>
+						<span id = "job-2" style = "display:none" class = "detail">
+							<b>Wave Project</b> Participated to develop a virtual education world for teenage participant learning nutrition knowladge.<br/>
+							Developing Platform: <b>C#</b>  and <b>Mysql,PHP</b>  on OpenSim platform
+							<br/>
+							<br/>
+							<b>FireSim</b> Participated to develop a fire escape simulation for research use<br/>
+							Developing Platform: <b>C++</b>  on Unreal Engine.
+							<button  onclick = "hiddenBlock('job-2')" type="button" >close</button>
+						</span>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id = "projects" class="cir-container col4r">
+		<div class = "color-circle grn">
+			<div class = "cir-text">
+				<h3 class = "title">Projects</h3>
+				<div class = "cir-content">
+					<button type = "button" class = "btn btn-xs glyphicon glyphicon-remove"></button>
+					<ul>
+						<li id = "java-projects" onclick = "showBlock('proj-java','proj-web','proj-os')" class = "detail-title">Java
+						</li>
+						<div id = "proj-java" style = "display:none;" class = "detail">
+							Thesis
+							<ul>
+								<li>Java</li>
+								<li>Implemented a graphic processing plugin, which is designed to help identifying deformed material by comparing pictures from original to deformed one</li>
+								<li><a href="https://github.com/LaurenCui/Thesis" target="_blank">Project Github Source</a></li>
+							</ul>
+							<button  onmousedown = "hiddenBlock('proj-java')" type = "button" >close</button>
+						</div>
+						<li id = "web-projects" onclick= "showBlock('proj-web','proj-java','proj-os')" class = "detail-title">Website Development
+						</li>
+						<div id = "proj-web" style = "display:none" class = "detail">
+							Web Dev: Movie Recommendation
+							<ul>
+								<li>HTML,PHP,Javascript,MySQL</li>
+								<li>A website provides registered user recommendation of movies based on their preference history</li>
+								<li><a href="https://github.com/LaurenCui/JS_Proj-movie" target="_blank">Project Github Source</a></li>
+								<li><a href="http://laurencui.github.io/JS_Proj-movie/" target="_blank">Demo Page</a></li>
+							</ul>
+							<button  onmousedown = "hiddenBlock('proj-web')" type="button" >close</button>
+						</div>
+						<li id = "os-projects" onclick= "showBlock('proj-os','proj-web','proj-java')" class = "detail-title">C and Python
+						</li>
+						<div id = "proj-os" style = "display:none" class = "detail">
+							Operating System Projects
+							<ul>
+								<li>C, Python</li>
+								<li>Multiple projects about I/O file and socket management.</li>
+							</ul>
+							Linux GUIs comparison using Empirical Method
+							<ul>
+								<li>Debian Linux, R</li>
+								<li>A term research project of comparing Linux Gnome and KDE system using empirical method.</li>
+							</ul>
+							<button  onmousedown = "hiddenBlock('proj-os')" type="button" >close</button>
+							
+						</div>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</main>
+<footer class = "footer"><p class="text-muted">jianqing cui resume | 2016 </p></footer>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  	<!-- Underscore -->
+    <script type="text/javascript" src = "http://underscorejs.org/underscore-min.js"></script>
+    <script src="/Users/jianqingcui/Documents/CODE/Web-Dev/Lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/myStyle-2primary.js" media="screen and (min-width: 600px)"></script>
+    <!--<script type="text/javascript" src="js/myStyle-2secondary.js" media="screen and (max-width: 599px)"></script>Doesn't work this way-->
+</body>
+</html>
