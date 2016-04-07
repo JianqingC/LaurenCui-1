@@ -79,28 +79,28 @@
 				<div class = "cir-content">
 					<button type = "button" class = "btn btn-xs glyphicon glyphicon-remove"></button>
 					<ul>
-						<li id = "job1" onclick= "showBlock('job-1')" class = "detail-title">
+						<li id = "job1" onclick= "showToggle('job-1')" class = "detail-title"><!--showBlock('job-1')-->
 							<b>Android Application Developer</b>, China Telecom
 							<span class = "bluebkgrnd">2013.08-2013.10</span>
 						</li>
-						<span id = "job-1" style = "display:none" class = "detail">
+						<span id = "job-1" style = "display:none" class = "detail" onclick= "showToggle('job-1')">
 							Appilication development:<br>
 							Participated developing To-Do-List Application<br>
 							Developing Platform: Java<br>
-							<button  onclick = "hiddenBlock('job-1')" type="button" >close</button>
+							<!--<button  onclick = "hiddenBlock('job-1')" type="button" >close</button>-->
 						</span>
-						<li id = "job2" onclick= "showBlock('job-2')" class = "detail-title">
+						<li id = "job2" onclick= "showToggle('job-2')" class = "detail-title"><!--showBlock('job-1')-->
 							<b>Programmer</b>, Oregon State University
 							<span class="bluebkgrnd">2014.07-2016.03</span>
 						</li>
-						<span id = "job-2" style = "display:none" class = "detail">
+						<span id = "job-2" style = "display:none" class = "detail" onclick= "showToggle('job-2')">
 							<b>Wave Project</b> Participated to develop a virtual education world for teenage participant learning nutrition knowladge.<br/>
 							Developing Platform: <b>C#</b>  and <b>Mysql,PHP</b>  on OpenSim platform
 							<br/>
 							<br/>
 							<b>FireSim</b> Participated to develop a fire escape simulation for research use<br/>
 							Developing Platform: <b>C++</b>  on Unreal Engine.
-							<button  onclick = "hiddenBlock('job-2')" type="button" >close</button>
+							<!--<button  onclick = "hiddenBlock('job-2')" type="button" >close</button>-->
 						</span>
 					</ul>
 				</div>
@@ -114,20 +114,20 @@
 				<div class = "cir-content">
 					<button type = "button" class = "btn btn-xs glyphicon glyphicon-remove"></button>
 					<ul>
-						<li id = "java-projects" onclick = "showBlock('proj-java','proj-web','proj-os')" class = "detail-title">Java
-						</li>
-						<div id = "proj-java" style = "display:none;" class = "detail">
+						<li id = "java-projects" onclick = "showToggle('proj-java')" class = "detail-title">Java
+						</li><!--"showBlock('proj-java','proj-web','proj-os')"-->
+						<div id = "proj-java" style = "display:none;" class = "detail" onclick = "showToggle('proj-java')">
 							Thesis
 							<ul>
 								<li>Java</li>
 								<li>Implemented a graphic processing plugin, which is designed to help identifying deformed material by comparing pictures from original to deformed one</li>
 								<li><a href="https://github.com/LaurenCui/Thesis" target="_blank">Project Github Source</a></li>
 							</ul>
-							<button  onmousedown = "hiddenBlock('proj-java')" type = "button" >close</button>
+							<!--<button  onmousedown = "hiddenBlock('proj-java')" type = "button" >close</button>-->
 						</div>
-						<li id = "web-projects" onclick= "showBlock('proj-web','proj-java','proj-os')" class = "detail-title">Website Development
-						</li>
-						<div id = "proj-web" style = "display:none" class = "detail">
+						<li id = "web-projects" onclick= "showToggle('proj-web','proj-java','proj-os')" class = "detail-title">Website Development
+						</li><!--onclick= "showBlock('proj-web','proj-java','proj-os')"-->
+						<div id = "proj-web" style = "display:none" class = "detail" onclick= "showToggle('proj-web','proj-java','proj-os')">
 							Web Dev: Movie Recommendation
 							<ul>
 								<li>HTML,PHP,Javascript,MySQL</li>
@@ -135,11 +135,11 @@
 								<li><a href="https://github.com/LaurenCui/JS_Proj-movie" target="_blank">Project Github Source</a></li>
 								<li><a href="http://laurencui.github.io/JS_Proj-movie/" target="_blank">Demo Page</a></li>
 							</ul>
-							<button  onmousedown = "hiddenBlock('proj-web')" type="button" >close</button>
+							<!--<button  onmousedown = "hiddenBlock('proj-web')" type="button" >close</button>-->
 						</div>
-						<li id = "os-projects" onclick= "showBlock('proj-os','proj-web','proj-java')" class = "detail-title">C and Python
-						</li>
-						<div id = "proj-os" style = "display:none" class = "detail">
+						<li id = "os-projects" onclick= "showToggle('proj-os','proj-web','proj-java')" class = "detail-title">C and Python
+						</li><!--onclick= "showBlock('proj-os','proj-web','proj-java')"-->
+						<div id = "proj-os" style = "display:none" class = "detail" onclick= "showToggle('proj-os','proj-web','proj-java')">
 							Operating System Projects
 							<ul>
 								<li>C, Python</li>
@@ -150,7 +150,7 @@
 								<li>Debian Linux, R</li>
 								<li>A term research project of comparing Linux Gnome and KDE system using empirical method.</li>
 							</ul>
-							<button  onmousedown = "hiddenBlock('proj-os')" type="button" >close</button>
+							<!--<button  onmousedown = "hiddenBlock('proj-os')" type="button" >close</button>-->
 							
 						</div>
 					</ul>
