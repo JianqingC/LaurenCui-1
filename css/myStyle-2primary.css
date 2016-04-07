@@ -124,6 +124,9 @@ main{
     margin: 1%;
 }
 
+.cir-content table{
+    margin: auto;
+}
 
 .cir-content table th,td{
     text-align: left;
