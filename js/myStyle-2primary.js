@@ -167,6 +167,15 @@ function hiddenBlock(){
 	
 }*/
 
+$("object").hover(
+	function(){
+		$("#pdf-resume").show();
+	},
+	function(){
+		setTimeout(function(){ $("#pdf-resume").hide(); }, 2000);
+	}
+);
+
 $(window).resize(_.throttle(function(){
 	//all container size change
 	var rowW = $(window).width();//$(".myrow").width();
