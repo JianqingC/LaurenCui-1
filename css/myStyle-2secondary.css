@@ -95,6 +95,7 @@ header{
     text-align: center;
     vertical-align: middle ;
 
+    cursor: pointer;
 }
 
 .cir-content{
@@ -172,11 +173,12 @@ header{
 }
 
 .detail-title{
-
+    cursor: pointer;
 }
 
 .detail{
  color: grey;
+ cursor: pointer;
 }
 
 footer{

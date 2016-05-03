@@ -97,6 +97,8 @@ main{
      /*centering*/
     text-align: center;
     vertical-align: middle;
+
+    cursor: pointer;
 }
 
 .cir-content{
@@ -160,21 +162,11 @@ main{
 	background-color: #BDB221;/*#3c763d;*/
 }
 
-.grn .detail-title{
-
-}
-
-.grn .detail{
-    color:#634E43;
-}
 
 .rd{
 	background-color: #f5bca0;/*salmon;*/
 }
 
-.rd .detail-title{
-
-}
 
 .rd .detail{
     color:#486343;
@@ -185,8 +177,12 @@ main{
     padding: 0;
 }
 
-.grn .detail-title{
+.detail-title, .detail{
+    cursor:pointer;
+}
 
+.grn .detail{
+    color:#634E43;
 }
 
 .red .detail{
