@@ -1,0 +1,213 @@
+body{
+	padding:0;
+	margin: 0;
+}
+header{
+	text-align: center;	
+}
+
+header h1{
+	color: cornflowerblue;
+	font-weight: bold;
+}
+
+header h5{
+	margin:1% 0;
+	color:darkslategrey;
+}
+
+nav{
+	text-align: center;
+	margin: 0 2%;
+	padding: 0 10%;
+	font-size: 120%;
+	/*background-color: #e2cfb6;*/
+}
+
+/* unvisited link */
+nav a:link {
+    color: darkslategrey;
+}
+
+/* visited link */
+nav a:visited {
+    color: darkslategrey;
+}
+
+/* mouse over link */
+nav a:hover {
+    color: darkcyan;
+}
+
+nav a{
+}
+
+main{
+	width: 96%;
+	margin: 0 2%;
+	color:#264040;
+	background-color: #b6e1fc;
+}
+
+/* unvisited link */
+main a:link {
+    color: darkseagreen;
+}
+
+/* visited link */
+main a:visited {
+    color: darkseagreen;
+}
+
+/* mouse over link */
+main a:hover {
+    color: darkcyan;
+}
+
+.row{
+	width: 100%;
+	display: flex;
+	justify-content: center ;
+}
+
+.row h3,h5{
+	color:#bf935a;
+	margin: 0;
+}
+
+.row ul{
+	margin-top: 0;
+}
+.row div{
+	margin: 0.5%;
+	background-color: #c4e3ed;
+}
+
+.row table{
+	color: #437043;
+	margin: 5%;
+	padding: 1%;
+}
+
+.row td{
+	width: 60%;
+	padding:1%;
+}
+
+.about{
+	flex:1;
+	padding: 2%;
+}
+
+.skills{
+	flex:2;
+	padding: 2%;
+}
+
+.experiences{
+	flex:1;
+	padding: 2%;
+}
+
+.experiences p{
+}
+
+#job1,#job2{
+	position: relative;
+}
+
+#job-1,#job-2{
+	/*display: none;*/
+	position: absolute;
+	top:10%;
+	left:10%;
+    background-color: darkslategrey;
+    color: tan;
+    opacity: 0.9;
+    padding: 2%;
+    z-index: 1;
+    text-indent: 50px;
+}
+
+.experiences button{
+	background-color: #53655b;
+	color:darkorange;
+	float:right;
+}
+
+/*#job1:hover #job-1{
+	display: block;
+}
+#job2:hover #job-2{
+	display: block;
+}*/
+
+.bluebkgrnd{
+	color: #43705a;
+	font-weight: bold;
+	text-align:right;
+	float:right;
+	position: relative;
+	transform: translateY(-5px);
+	top:-10%;
+}
+
+.projects{
+	flex:1;
+	padding: 2%;
+}
+
+.projects button{
+	background-color: #53655b;
+	color:darkorange;
+	float:right;
+}
+
+#java-projects,#web-projects,#os-projects{
+	position: relative;
+	opacity: 1;
+	padding: 2;
+}
+
+#proj-java,#proj-web, #proj-os{
+	z-index: 1;
+	position: absolute;
+	top:10%;
+	left:10%;
+    background-color: darkslategrey;
+    color: tan;
+    padding: 2%;
+}
+/*#java-projects,#web-projects,#os-projects{
+	position: relative;
+	opacity: 1;
+}
+#java-projects:hover #proj-java{
+	display: block;
+}
+#proj-java,#proj-web, #proj-os{
+	width: 50%;
+	display: none;
+	position: absolute;
+	top:-1%;
+	left:-1%;
+    background-color: cadetblue;
+    opacity: 0.99;
+}
+#proj-java.open{
+	height: 200px;
+	transition: height, 1s linear;
+}
+#web-projects:hover #proj-web{
+	display: block;
+}
+#os-projects:hover #proj-os{
+	display: block;
+}*/
+footer{
+	text-align: center;
+	color: darkslategrey;
+	/*background-color: #e2cfb6;*/
+	margin: 0 2%;
+}
+

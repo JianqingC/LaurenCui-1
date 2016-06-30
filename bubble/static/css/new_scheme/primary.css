@@ -1,0 +1,220 @@
+body{
+	padding:0;
+	margin: 0;
+}
+header{
+	text-align: center;	
+}
+
+header h1{
+	color: #b87c96;
+	font-weight: bold;
+}
+
+header h5{
+	margin: 1% 0;
+	color: #b87c96;
+}
+
+nav{
+	text-align: center;
+	margin: 0 2%;
+	padding: 0 10%;
+	font-size: 120%;
+	/*background-color: #e2cfb6;*/
+}
+
+/* unvisited link */
+nav a:link {
+    color: #4e603c;
+}
+
+/* visited link */
+nav a:visited {
+    color: #4e603c;
+}
+
+/* mouse over link */
+nav a:hover {
+    color: #bf0050;
+    /*#5b3947;*/
+}
+
+nav a{
+}
+
+main{
+	width: 96%;
+	margin: 0 2%;
+	color:#264040;
+	background-color: #c0c7ba;
+	border: 0px none;
+    border-radius: 5px;
+}
+
+/* unvisited link */
+main a:link {
+    color: #af07ae;
+}
+
+/* visited link */
+main a:visited {
+    color: #af07ae;
+}
+
+/* mouse over link */
+main a:hover {
+    color: #5eb807;
+}
+
+.row{
+	width: 100%;
+	display: flex;
+	justify-content: center ;
+}
+
+.row h3,h5{
+	color:#bf935a;
+	margin: 0;
+}
+
+.row ul{
+	margin-top: 0;
+}
+.row div{
+	margin: 0.5%;
+	border: 0px none;
+    border-radius: 5px;
+}
+
+.row table{
+	color: #437043;
+	margin: 5%;
+	padding: 1%;
+}
+
+.row td{
+	width: 60%;
+	padding:1%;
+}
+
+.about{
+	flex:1;
+	padding: 2%;
+	background-color: #b86c96;
+	color: #41001b;
+}
+
+.about h3{
+	color: #bf0050;
+}
+
+.skills{
+	flex:2;
+	padding: 2%;
+	background-color: #b3c988;
+	color: #2f4700;
+}
+
+.skills h3{
+	color: #7dac20;
+}
+
+.experiences{
+	flex:1;
+	padding: 2%;
+	background-color: #9ec182;
+	color: #2f4700;
+}
+
+.experiences h3{
+	color: #7dac20;
+}
+
+.projects{
+	flex:1;
+	padding: 2%;
+	background-color: #b86c96;
+	color: #41001b;
+	min-height: 200px;
+}
+
+.projects h3{
+	color: #bf0050;
+}
+
+#job1,#job2{
+	position: relative;
+}
+
+#job-1,#job-2{
+	/*display: none;*/
+	position: absolute;
+	top:30%;
+	left:20%;
+    background-color: #f3c1d6;
+    color: #241f21;
+    opacity: 0.9;
+    padding: 2%;
+    z-index: 1;
+
+    height: 600%;/*parent p-span*/
+   	width: 80%;
+    overflow: auto;
+}
+
+#job-1,#job-2 ul{
+	margin: 5%;
+}
+
+.experiences button{
+	background-color: #bff995;
+	color: #241f21;
+	width:15%;
+	margin: 1% 0 1% 80%;
+}
+
+.bluebkgrnd{
+	color: #43705a;
+	font-weight: bold;
+	text-align:right;
+	float:right;
+	position: relative;
+	transform: translateY(-5px);
+	top:-10%;
+}
+
+.projects button{
+	background-color: #f794be;
+	color:#232621;
+	width:15%;
+	margin: 1% 0 1% 80%;
+}
+
+#java-projects,#web-projects,#os-projects{
+	position: relative;
+	opacity: 1;
+	padding: 2%
+}
+
+#proj-java,#proj-web, #proj-os{
+	z-index: 1;
+	position: absolute;
+	top:10%;
+	left:10%;
+    background-color: #d8f5c3;
+    color: #232621;
+    padding: 2%;
+    /*opacity: 0.99;*/
+
+    height: 300%;/*parent ul-li*/
+   	width: 80%;
+    overflow: auto;
+}
+
+footer{
+	text-align: center;
+	color: #b87c96;
+	margin: 0 2%;
+}
+

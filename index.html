@@ -1,174 +1,188 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
     <!-- Bootstrap -->
-    <link href="js/lib/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
-    <!--Chart.js-->
-    <script src="js/lib/Chart.js-master/Chart.js"></script>
-
+    <link href="js/lib/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <!--my style-->
-	<link href="css/myStyle-2primary.css"rel="stylesheet" media="screen and (min-width: 760px)">
-	<link href="css/myStyle-2secondary.css"rel="stylesheet" media="screen and (max-width: 759px)">
-
-	<title>My Page</title>
+	<link href="css/primary.css"rel="stylesheet" type="text/css">
+	<title>Jianqing "Lauren" Cui</title>
 </head>
-<body ><!--class = "container">-->
-<header>
-<h1>Jianqing "Lauren" Cui</h1>
-<h5>Junior front-end Developer</h5>
-</header>
-
-<main>
-<div class = "myrow myrow-bottom">
-	<div id = "about" class="cir-container col4">
-	<div class = "color-circle grn">
-		<div class = "cir-text">
-		<h3 class = "title">About</h3>
-		<div class = "cir-content">
-			<button type = "button" class = "btn btn-xs glyphicon glyphicon-remove"></button>
-			<ul>
-				<li>Name: Jianqing "Lauren" Cui </li>
-				<li>Phone: +1 510-309-9127</li>
-				<li>Email: <a href="mailto:lauren7cui@gmail.com">lauren7cui@gmail.com</a></li>
-				<li id = "education-list">Education
-					<!--hide: small size page until click-->
-					<ul id = "education">
-						<li>Master. Computer Science. Oregon State University</li>
-						<li>Master. Mechanical Engineering. Oregon State University</li>
-					</ul>
-					<!--hide: until click-->
-				</li>
+<body >
+<a href="#top" class="header">
+	<b>Jianqing "Lauren" Cui</b>
+</a>
+<div class="row row-height">
+<div class="menu col-md-2 col-sm-3">
+	<ul>
+		<li class="pri"><a href="#top">Experiences</a>
+			<ul class="sub">
+				<li><a href="#exp">Work Experiences</a></li>
+				<li><a href="#pro">Projects</a>
+				<ul class="subsub">
+					<li><a href="#web-projects">Web-Dev</a></li>
+					<li><a href="#java-projects">Java</a></li>
+					<li><a href="#os-projects">Operating System</a></li>
+				</ul></li>
 			</ul>
-		</div>
-		</div>
-	</div>
-	</div>
-	<div id = "skills" class="cir-container col4r">
-		<div class = "color-circle rd">
-			<div class = "cir-text">
-				<h3 class = "title">Resume</h3>
-				<div class = "cir-content">
-					<button type = "button" class = "btn btn-xs glyphicon glyphicon-remove"></button>
-					<table id = "skill-table">
-						<tr><th>Skill Type</th><th>Language</th></tr>
-						<tr><td><b>Objective Oriented</b></td><td>Java,C#,C++</td></tr>
-						<tr><td><b>Website Dev</b></td><td>HTML,Javascript,PHP,CSS</td></tr>
-						<tr><td><b>Scripting Language</b></td><td>Python,C,Bash Script</td></tr>
-						<tr><td><b>Database</b></td><td>MySQL,SQL</td></tr>
-					</table>
-					
-					<object width= "100%" height= "100%" data="files/Resume_Jianqing_Cui.pdf">
-						<p>Resume PDF(click for opening in a new tab)</p>
-					</object>
-					<span id = "pdf-resume" style= "display: none;"><a href="files/Resume_Jianqing_Cui.pdf" target="_blank" >Resume PDF Link</a></span>
+		</li>
+		<li class="pri"><a href="#bas">Basic Description</a>
+			<ul class="sub">
+				<li>About me</li>
+				<li>Contact</li>
+				<li>Education</li>
+			</ul>
+		</li>
+		<li class="pri">More Description
+			<ul class="sub">
+				<li><a href="#ski">Skills</a></li>
+				<li><a href="#res">Resume</a></li>
+				<li><a href="files/Resume_Jianqing_Cui.pdf" target="_blank" >Download</a></li>
+			</ul>
+		</li>
+	</ul>
+	<div class="footer sm text-muted">jianqing 'lauren' cui <br/> 2016</div>
+</div><!--menu-->
+<div class="main col-md-10 col-sm-9">
+	<div id="top">
+		<h4>Work Expriences</h4>
+		<ul id="exp">
+			<li id="job1">
+				<b>Android Application Developer</b>, China Telecom
+				<span>2013.08-2013.10</span>
+				<div id="job-1">
+					Participated developing GPS application, to-do-list application<br>
+					Developing Platform: <b>Java</b>, Eclipse SDK<br>
 				</div>
+			</li>
+			<li id="job2">
+				<b>Software Programmer</b>, Oregon State University
+				<span>2014.07-2016.03</span>
+				<div id="job-2">
+					<!--<b>Wave Project</b> -->
+					Participated to develop a virtual education world for teenage participant learning nutrition knowladge.<br/>
+					Developing Website for user account customizing<br/>
+					Python, PHP scripts for data trasmitting, analysing from back end.<br/>
+					Developing Platform: <b>C#</b>, <b>HTML</b>,<b>CSS</b>, <b>JavaScript</b>, <b>Mysql</b>, <b>Python</b> and <b>PHP</b>  on OpenSim platform
+					<br/>
+					<!--<b>FireSim</b> Participated to develop a fire escape simulation for research use<br/>
+					Developing Platform: <b>C++</b>  on Unreal Engine.-->
+				</div>
+			</li>
+		</ul>		
+			
+	</div>
+	<div id="pro">
+		<h4>Projects</h4>
+		<div class="row Hori">
+			<div class="anchors prev col-md-1">
+				&lt;
+			</div>
+			<div class="col-md-10">
+				<div class="horiA" id="web-projects">Website Development
+				<div class="row">
+					<div id="proj-web" class="col-md-6 col-sm-6 subcol">
+						Movie Recommendation
+						<ul>
+							<li>A website provides registered user recommendation of movies based on their preference history</li>
+							<li><a href="https://github.com/LaurenCui/JS_Proj-movie" target="_blank">Project Github Source</a></li>
+							<li><a href="http://laurencui.github.io/JS_Proj-movie/" target="_blank">Demo Page</a></li>
+						</ul>
+					</div>
+					<div id="proj-lib" class="col-md-6 col-sm-6 subcol">
+						Bubble Decoration
+						<ul>
+							<li>A Library of Javascript, CSS to help wrapping HTML block into bubble shape.</li>
+							<li><a href="https://github.com/LaurenCui/JS_Proj-movie" target="_blank">Project Github Source</a></li>
+							<li><a href="http://laurencui.github.io/JS_Proj-movie/" target="_blank">Demo Page</a></li>
+						</ul>
+					</div>
+				</div>
+				</div><!--End of Web-Dev-->
+				<div class="hori" id="java-projects">Java
+				<ul>
+					<li>Implemented a graphic processing plugin, which is designed to help identifying deformed material by comparing pictures from original to deformed one</li>
+					<li><a href="https://github.com/LaurenCui/Thesis" target="_blank">Project Github Source</a></li>
+				</ul></div><!--End of Java-->
+				<div class="hori" id="os-projects">C and Python
+					<div id="proj-os">Operating System Projects
+						<ul>
+							<li>C, Python</li>
+							<li>Multiple projects about I/O file and socket management.</li>
+						</ul>
+						Linux GUIs comparison using Empirical Method
+						<ul>
+							<li>Debian Linux, R</li>
+							<li>A term research project of comparing Linux Gnome and KDE system using empirical method.</li>
+						</ul>
+					</div>
+				</div><!--End of OS-->
+			</div>
+			<div class="anchors next col-md-1">
+				&gt;
 			</div>
 		</div>
 	</div>
-</div><!--first roww-->
-<div class="myrow myrow-top">
-	<div id = "experiences" class="cir-container col4">
-		<div class = "color-circle rd">
-			<div class = "cir-text">
-				<h3 class = "title">Experiences</h3>
-				<div class = "cir-content">
-					<button type = "button" class = "btn btn-xs glyphicon glyphicon-remove"></button>
-					<ul>
-						<li id = "job1" onclick= "showToggle('job-1')" class = "detail-title"><!--showBlock('job-1')-->
-							<b>Android Application Developer</b>, China Telecom
-							<span class = "bluebkgrnd">2013.08-2013.10</span>
-						</li>
-						<span id = "job-1" style = "display:none" class = "detail" onclick= "showToggle('job-1')">
-							Appilication development:<br>
-							Participated developing To-Do-List Application<br>
-							Developing Platform: Java<br>
-							<!--<button  onclick = "hiddenBlock('job-1')" type="button" >close</button>-->
-						</span>
-						<li id = "job2" onclick= "showToggle('job-2')" class = "detail-title"><!--showBlock('job-1')-->
-							<b>Programmer</b>, Oregon State University
-							<span class="bluebkgrnd">2014.07-2016.03</span>
-						</li>
-						<span id = "job-2" style = "display:none" class = "detail" onclick= "showToggle('job-2')">
-							<b>Wave Project</b> Participated to develop a virtual education world for teenage participant learning nutrition knowladge.<br/>
-							Developing Platform: <b>C#</b>  and <b>Mysql,PHP</b>  on OpenSim platform
-							<br/>
-							<br/>
-							<b>FireSim</b> Participated to develop a fire escape simulation for research use<br/>
-							Developing Platform: <b>C++</b>  on Unreal Engine.
-							<!--<button  onclick = "hiddenBlock('job-2')" type="button" >close</button>-->
-						</span>
-					</ul>
-				</div>
-			</div>
+	<div id="bas">
+		<h4>Basic Description</h4>
+		<ul>
+			<li id="education-list">Education
+				<ul id="education">
+					<li>Master. Computer Science. Oregon State University</li>
+					<li>Master. Mechanical Engineering. Oregon State University</li>
+				</ul>
+			</li>
+			<li>Contact information:
+				<ul>
+					<li>Phone: +1 510-309-9127</li>
+					<li>Email: <a href="mailto:lauren7cui@gmail.com">lauren7cui@gmail.com</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div id="more">
+		<ul id="ski">
+			<li>Skills Table
+				<table id="skill-table" summary="">
+				<tr><th>Skill Type</th><th>Language</th></tr>
+				<tr><td><b>Web Related</b></td><td>HTML,Javascript,PHP,CSS <span class="webR">[more]</span></td></tr>
+				<tr class="webr"><td>Common JS Libraries</td><td>JQuery,Underscore,Handlebar,Mocha,Chai</td></tr>
+				<tr class="webr"><td>JS Framework Libraries</td><td>Angular,Backbone,Node.js</td></tr>
+				<tr class="webr"><td>Style Sheet Languages</td><td>LESS,SASS</td></tr>
+				<tr><td><b>Scripting Language</b></td><td>Python,C,Bash Script</td></tr>
+				<tr><td><b>Database</b></td><td>MySQL,SQL</td></tr>
+				<tr><td><b>Objective Oriented</b></td><td>Java,C#,C++</td></tr>
+			</table>
+			</li>
+			<li>
+				Self-Description<br/>
+				Eager to Learn, Teamplayer, aproductive
+			</li>
+		</ul>
+	</div>
+	<div id="res" class="row">
+		<h4>Resume</h4>
+		<div class="col-md-3">
+			<p><span id="pdf-resume"><a href="files/Resume_Jianqing_Cui.pdf" target="_blank" >Resume PDF Link</a></span>(click for opening in a new tab)</p>
+		</div>
+		<div class="col-md-9">
+			<object width= "80%" height= "80%" data="files/Resume_Jianqing_Cui.pdf">
+				<p>Resume PDF(click for opening in a new tab)</p>
+			</object>
 		</div>
 	</div>
-	<div id = "projects" class="cir-container col4r">
-		<div class = "color-circle grn">
-			<div class = "cir-text">
-				<h3 class = "title">Projects</h3>
-				<div class = "cir-content">
-					<button type = "button" class = "btn btn-xs glyphicon glyphicon-remove"></button>
-					<ul>
-						<li id = "java-projects" onclick = "showToggle('proj-java')" class = "detail-title">Java
-						</li><!--"showBlock('proj-java','proj-web','proj-os')"-->
-						<div id = "proj-java" style = "display:none;" class = "detail" onclick = "showToggle('proj-java')">
-							Thesis
-							<ul>
-								<li>Java</li>
-								<li>Implemented a graphic processing plugin, which is designed to help identifying deformed material by comparing pictures from original to deformed one</li>
-								<li><a href="https://github.com/LaurenCui/Thesis" target="_blank">Project Github Source</a></li>
-							</ul>
-							<!--<button  onmousedown = "hiddenBlock('proj-java')" type = "button" >close</button>-->
-						</div>
-						<li id = "web-projects" onclick= "showToggle('proj-web','proj-java','proj-os')" class = "detail-title">Website Development
-						</li><!--onclick= "showBlock('proj-web','proj-java','proj-os')"-->
-						<div id = "proj-web" style = "display:none" class = "detail" onclick= "showToggle('proj-web','proj-java','proj-os')">
-							Web Dev: Movie Recommendation
-							<ul>
-								<li>HTML,PHP,Javascript,MySQL</li>
-								<li>A website provides registered user recommendation of movies based on their preference history</li>
-								<li><a href="https://github.com/LaurenCui/JS_Proj-movie" target="_blank">Project Github Source</a></li>
-								<li><a href="http://laurencui.github.io/JS_Proj-movie/" target="_blank">Demo Page</a></li>
-							</ul>
-							<!--<button  onmousedown = "hiddenBlock('proj-web')" type="button" >close</button>-->
-						</div>
-						<li id = "os-projects" onclick= "showToggle('proj-os','proj-web','proj-java')" class = "detail-title">C and Python
-						</li><!--onclick= "showBlock('proj-os','proj-web','proj-java')"-->
-						<div id = "proj-os" style = "display:none" class = "detail" onclick= "showToggle('proj-os','proj-web','proj-java')">
-							Operating System Projects
-							<ul>
-								<li>C, Python</li>
-								<li>Multiple projects about I/O file and socket management.</li>
-							</ul>
-							Linux GUIs comparison using Empirical Method
-							<ul>
-								<li>Debian Linux, R</li>
-								<li>A term research project of comparing Linux Gnome and KDE system using empirical method.</li>
-							</ul>
-							<!--<button  onmousedown = "hiddenBlock('proj-os')" type="button" >close</button>-->
-							
-						</div>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-</main>
-<footer class = "footer"><p class="text-muted">jianqing cui resume | 2016 </p></footer>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  	<!-- Underscore -->
-    <script type="text/javascript" src = "http://underscorejs.org/underscore-min.js"></script>
-    <script src="js/lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+</div><!--main col-->
+</div><!--row end:-->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- jQuery-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+<!-- Underscore -->
+<script type="text/javascript" src="http://underscorejs.org/underscore-min.js"></script>
+<!-- Bootstrap-->
+<script type="text/javascript" src="js/lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript" src="js/myStyle-2primary.js"></script>
-    <!--<script type="text/javascript" src="js/myStyle-2secondary.js" media="screen and (max-width: 599px)"></script>Doesn't work this way-->
+<script type="text/javascript" src="js/my.js"></script>
 </body>
 </html>
