@@ -1,5 +1,5 @@
 window{
-	max-height: 600px;
+	max-height: 1000px;
 	max-width: 1024px;
 }
 .header{
@@ -9,17 +9,34 @@ window{
 	right: 0;
 	z-index: 1;
 	text-align: right;
-	padding: 10px;
+	padding: 1px;
+	margin: 0;
 	background-color: #fefefe;
 	opacity:0.5;
 }
 .header>a:hover,a:link,a:visited,a:active{
 	color:black;
 }
+.menuB{
+	float:right;
+	position: fixed;
+	top:5%;
+	right: 0;
+	z-index: 1;
+	text-align: right;
+	padding: 1px;
+	margin: 0;
+	background-color: #eee;
+	opacity:0.7;
+}
+.menuB li>a{
+	padding:1px !important;
+}
 .menu{
 	background-color: black;
 	color: white;
 	padding-top: 10px;
+	height:1000px;
 }
 .menu a:hover{
 	color:yellow;
@@ -64,15 +81,16 @@ ul.subsub li{
 }
 .main{
 	overflow: scroll;/*overflow: auto;*/
+	height: 1000px;
 }
 .main ul li{
 	list-style: none;
 }
 .Hori{
-	height:200px;
+	
 }
 .Hori>div{
-	height:100%;
+	/*height:100%;*/
 }
 .hori{
 	display: none;
@@ -85,6 +103,7 @@ ul.subsub li{
 	background-color: #eee;
 	vertical-align: middle;
 	overflow: hidden;
+	height:200px;
 }
 .subcol{
 	background-color: #ddd;
@@ -94,8 +113,7 @@ ul.subsub li{
 }
 .prev,.next{
 	vertical-align: middle;
-	text-align: center;
-	padding-top: 90px;
+	text-align: center;	
 	cursor:pointer;
 }
 #skill-table{
@@ -106,6 +124,15 @@ ul.subsub li{
 }
 #skill-table tr{
 	border-bottom: 1px solid #000;
+	cursor: default;
+}
+#skill-table th{
+	background-color:#1f4060;
+    color: white;
+    padding-left: 15%;
+}
+#skill-table td{
+    padding-left: 15%;
 }
 #skill-table tr:hover{
 	background-color: #f5f5f5;
@@ -113,13 +140,16 @@ ul.subsub li{
 #skill-table tr.webr{
 	display:none;
 }
+.webR:hover{
+	color:#888;
+}
 .footer{
 	text-align: center;
 	bottom: 0;
 	width: 100%;
 	position: absolute;
 }
-.row-height>div{
-	height:600px;
-	overflow: scroll;/**/
-}
+/*.row-height>div{
+	height:1000px;
+	overflow: scroll;
+}*/

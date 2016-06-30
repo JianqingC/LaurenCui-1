@@ -7,15 +7,15 @@
     <!-- Bootstrap -->
     <link href="js/lib/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <!--my style-->
-	<link href="css/primary.css"rel="stylesheet" type="text/css">
+	<link href="css/primary.css" rel="stylesheet" type="text/css">
 	<title>Jianqing "Lauren" Cui</title>
 </head>
 <body >
 <a href="#top" class="header">
 	<b>Jianqing "Lauren" Cui</b>
 </a>
-<div class="row row-height">
-<div class="menu col-md-2 col-sm-3">
+<div class="row">
+<div class="menu col-md-2 hidden-sm hidden-xs">
 	<ul>
 		<li class="pri"><a href="#top">Experiences</a>
 			<ul class="sub">
@@ -44,8 +44,37 @@
 		</li>
 	</ul>
 	<div class="footer sm text-muted">jianqing 'lauren' cui <br/> 2016</div>
+</div>
+<div class="menuB dropdown visible-sm visible-xs">
+	<button class="btn btn-muted dropdown-toggle" type="button" data-toggle="dropdown" >Menu
+	<span class="caret"></span></button>
+	<ul class="dropdown-menu small">
+		<li class="pri"><a href="#top">Experiences</a>
+			<ul class="sub">
+				<li><a href="#exp">Work Experiences</a></li>
+				<li><a href="#pro">Projects</a>
+				<ul class="subsub">
+					<li><a href="#web-projects">Web-Dev</a></li>
+					<li><a href="#java-projects">Java</a></li>
+					<li><a href="#os-projects">Operating System</a></li>
+				</ul></li>
+			</ul>
+		</li>
+		<li class="pri"><a href="#bas">Basic</a>
+			<ul class="sub">
+				<li>About me</li>
+				<li>Contact</li>
+				<li>Education</li>
+			</ul>
+		</li>
+		
+		<li><a href="#ski">Skills</a></li>
+		<li><a href="#res">Resume</a></li>
+		<li><a href="files/Resume_Jianqing_Cui.pdf" target="_blank" >Download</a></li>
+			
+	</ul>
 </div><!--menu-->
-<div class="main col-md-10 col-sm-9">
+<div class="main row-eq-height col-md-10">
 	<div id="top">
 		<h4>Work Expriences</h4>
 		<ul id="exp">
@@ -77,12 +106,14 @@
 	<div id="pro">
 		<h4>Projects</h4>
 		<div class="row Hori">
-			<div class="anchors prev col-md-1">
-				&lt;
+			<div class="anchors prev col-md-1 col-sm-6 col-xs-6">
+				<div class="hidden-sm hidden-xs" style="height:200px;padding-top:90px;">&lt;</div>
+				<div class="visible-sm visible-xs">prev</div>
 			</div>
-			<div class="col-md-10">
-				<!--<div  id="web-projects">
-				<div class="row" style="overflow:auto;">class="col-md-6 col-sm-6 subcol"-->
+			<div class="col-sm-6 col-xs-6 visible-sm visible-xs anchors next">
+				next
+			</div>
+			<div class="col-md-10 col-sm-12 col-xs-12">
 				<div class="horiA" id="proj-web"> 
 					<b>Website Development: Movie Recommendation</b>
 					<ul>
@@ -91,16 +122,14 @@
 						<li><a href="http://laurencui.github.io/JS_Proj-movie/" target="_blank">Demo Page</a></li>
 					</ul>
 				</div>
-				<div class="hori"id="proj-lib">
+				<div class="hori" id="proj-lib">
 					<b>Website Development: Bubble Decoration</b>
 					<ul>
 						<li>A Library of Javascript, CSS to help wrapping HTML block into bubble shape.</li>
 						<li><a href="https://github.com/LaurenCui/bubble-lib" target="_blank">Project Github Source</a></li>
 						<li><a href="http://laurencui.github.io/bubble-lib/" target="_blank">Demo Page</a></li>
 					</ul>
-				</div>
-				<!--</div>
-				</div>End of Web-Dev-->
+				</div><!--End of Web-Dev-->
 				<div class="hori" id="java-projects"><b>Java Development:Graphi Processing Application</b>
 				<ul>
 					<li>Developed an application, which is designed to help identifying deformed material by comparing pictures from original to deformed one</li>
@@ -120,7 +149,7 @@
 					</div>
 				</div><!--End of OS-->
 			</div>
-			<div class="anchors next col-md-1">
+			<div class="anchors next col-md-1 hidden-sm hidden-xs large" style="height:200px;padding-top:90px;">
 				&gt;
 			</div>
 		</div>
@@ -163,16 +192,17 @@
 		</ul>
 	</div>
 	<div id="res" class="row">
-		<h4>Resume</h4>
+		<h4 class="col-md-12">Resume</h4>
 		<div class="col-md-3">
 			<p><span id="pdf-resume"><a href="files/Resume_Jianqing_Cui.pdf" target="_blank" >Resume PDF Link</a></span>(click for opening in a new tab)</p>
 		</div>
 		<div class="col-md-9">
-			<object width= "80%" height= "80%" data="files/Resume_Jianqing_Cui.pdf">
+			<object width= "100%" height= "100%"  data="files/Resume_Jianqing_Cui.pdf">
 				<p>Resume PDF(click for opening in a new tab)</p>
 			</object>
 		</div>
 	</div>
+
 </div><!--main col-->
 </div><!--row end:-->
 <!-- Include all compiled plugins (below), or include individual files as needed -->
