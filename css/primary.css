@@ -90,6 +90,7 @@ ul.subsub li{
 	background-color: #ddd;
 	padding:2%;
 	height:95%;
+	overflow: auto;
 }
 .prev,.next{
 	vertical-align: middle;
