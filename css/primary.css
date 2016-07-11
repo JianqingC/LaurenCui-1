@@ -31,6 +31,7 @@ window{
 }
 .menuB li>a{
 	padding:1px !important;
+	cursor: pointer;
 }
 .menu{
 	background-color: black;
@@ -55,6 +56,7 @@ window{
 }
 .menu li{
 	list-style:none;
+	cursor: pointer;
 }
 .sub{
 	display: none;
