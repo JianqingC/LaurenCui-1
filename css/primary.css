@@ -145,6 +145,14 @@ ul.subsub li{
 .webR:hover{
 	color:#888;
 }
+a:link, a:visited{
+    color:black;
+}
+
+a:hover, a:active{
+    color:#AA8339;
+}
+
 .footer{
 	text-align: center;
 	bottom: 0;

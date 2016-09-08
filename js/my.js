@@ -15,10 +15,10 @@ $(".sub").click(function(){
 	}
 });
 $(".anchors").click(function(){
-	console.log('fish');
+	var curActv , newActv ;
 	if($(this).hasClass("prev")){
-		var curActv = $($(this).parents(".Hori")[0]).find(".horiA");
-		var newActv = $(curActv).prev("div.hori");
+		curActv = $($(this).parents(".Hori")[0]).find(".horiA");
+		newActv = $(curActv).prev("div.hori");
 		if(newActv.length>0){
 			$(curActv).removeClass("horiA");
 			$(curActv).addClass("hori");
@@ -26,8 +26,8 @@ $(".anchors").click(function(){
 			$(newActv).addClass("horiA");
 		}
 	}else if($(this).hasClass("next")){
-		var curActv = $($(this).parents(".Hori")[0]).find(".horiA");
-		var newActv = $(curActv).next("div.hori");
+		curActv = $($(this).parents(".Hori")[0]).find(".horiA");
+		newActv = $(curActv).next("div.hori");
 		if(newActv.length>0){
 			$(curActv).removeClass("horiA");
 			$(curActv).addClass("hori");
@@ -37,17 +37,18 @@ $(".anchors").click(function(){
 	}
 });
 $(".webR").click(function(){
+	var rows,i;
 	if(this.innerText == "[more]"){
 		this.innerText="[less]";
-		var rows = $($(this)).parents("#skill-table").find(".webr");
-		for(var i=0;i<rows.length;i++){
+		rows = $($(this)).parents("#skill-table").find(".webr");
+		for(i=0;i<rows.length;i++){
 			$(rows[i]).removeClass("webr");
 			$(rows[i]).addClass("web");
 		}
 	}else{
 		this.innerText="[more]";
-		var rows = $($(this)).parents("#skill-table").find(".web");
-		for(var i=0;i<rows.length;i++){
+		rows = $($(this)).parents("#skill-table").find(".web");
+		for(i=0;i<rows.length;i++){
 			$(rows[i]).addClass("webr");
 			$(rows[i]).removeClass("web");
 		}
