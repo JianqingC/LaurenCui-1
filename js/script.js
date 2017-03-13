@@ -81,7 +81,7 @@ $("#resume_pdf").click(function(event){
 	window.open('./files/Resume_Lauren_web.pdf');
 });
 //image navi button
-$(".navi_holder .slide_navi").click(function(){
+$(".navi_holder .slide_navi").onclick(function(){
 	var target = $(this).attr("class").split(" ")[1],//second class a=mark the image: slide_image_#
 		art_id = "."+"slide_art_"+target.split("_")[2],//"#"+$(this).attr("class").split(" ")[1],
 		pjct_id = "."+"slide_pjct_"+target.split("_")[2],
