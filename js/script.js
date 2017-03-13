@@ -51,7 +51,11 @@ $("div.flip").click(function(){
 	}
 });
 $(".slide_show").click(function(){
-	$(".slide_container").hasClass("closed")===true?$(".slide_container").removeClass("closed").addClass("opened"):$(".slide_container").removeClass("opened").addClass("closed");
+	if($(".slide_container").hasClass("closed")){
+		$(".slide_container").removeClass("closed").addClass("opened");
+	}else{
+		$(".slide_container").removeClass("opened").addClass("closed");
+	}
 });
 $(".desc .link").click(function(){
 	var thisDesc = $(this).parents(".desc"),
