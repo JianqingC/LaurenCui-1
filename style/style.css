@@ -550,6 +550,7 @@ body .my_container {
 }
 .desc p {
   background-color: #ffffff;
+  z-index: 5;
 }
 .desc .slide_d {
   padding: 2px;
@@ -563,7 +564,8 @@ body .my_container {
 .desc .slide_d.opened {
   /* visible */
   opacity: 1;
-  z-index: 0;
+  z-index: 0!important;
+  visibility: visible;
   -webkit-transform: translate(0, 0%);
   -moz-transform: translate(0, 0%);
   -ms-transform: translate(0, 0%);
@@ -571,7 +573,8 @@ body .my_container {
 }
 .desc .slide_d.closed {
   opacity: 0;
-  z-index: -1;
+  z-index: 0!important;
+  visibility: hidden;
   -webkit-transform: translate(0, -100%);
   -moz-transform: translate(0, -100%);
   -ms-transform: translate(0, -100%);
