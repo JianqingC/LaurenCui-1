@@ -587,6 +587,7 @@ body {
   }
   p{
     background-color: rgba(255, 255, 255, 1);
+    z-index: 5;
   }
   //description block paragraph
   .slide_d{
@@ -600,7 +601,8 @@ body {
   }
   .slide_d.opened{/* visible */
     opacity:1;
-    z-index:0;
+    z-index:0!important;
+    visibility: visible;
     -webkit-transform: translate(0, 0%);
     -moz-transform: translate(0, 0%);
     -ms-transform: translate(0, 0%);
@@ -608,7 +610,8 @@ body {
   }
   .slide_d.closed{
     opacity: 0;
-    z-index: -1;
+    z-index: 0!important;
+    visibility: hidden;
     -webkit-transform: translate(0, -100%);
     -moz-transform: translate(0, -100%);
     -ms-transform: translate(0, -100%);
