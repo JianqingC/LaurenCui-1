@@ -74,6 +74,12 @@ body .my_container {
     padding-left: 0!important;
     padding-right: 0!important;
   }
+  .board .flipOff.art {
+    background-image: url("../img/myDraw/art_angelica.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+  }
   .slide_container {
     height: 100%;
     padding: 0;
@@ -159,6 +165,12 @@ body .my_container {
     height: 25vw;
     padding-left: 0!important;
     padding-right: 0!important;
+  }
+  .board .flipOff.art {
+    background-image: url("../img/myDraw/art_angelica.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
   }
   .col_5 {
     position: relative;
@@ -390,6 +402,8 @@ body .my_container {
 .pics .slide_image img {
   height: 100%;
   width: 80%;
+  max-width: 600px;
+  max-height: 215px;
   margin: auto;
 }
 .pics div.slide_image {
@@ -596,13 +610,6 @@ body .my_container {
   background-image: url("../img/myDraw/coding.png");
   background-repeat: repeat;
   background-size: 120% auto;
-  overflow-y: hidden;
-}
-.stormy_tile {
-  background-image: url("../img/myDraw/blurred_stormy.jpg");
-  background-color: #88B04B;
-  background-size: contain;
-  background-repeat: no-repeat;
   overflow-y: hidden;
 }
 .mytooltip {
