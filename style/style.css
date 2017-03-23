@@ -113,7 +113,7 @@ body .my_container {
   .image_holder {
     width: 99%;
     height: 98%;
-    margin-top: 0;
+    margin-top: 1%;
     clear: both;
     position: relative;
     overflow-x: hidden;
@@ -225,7 +225,7 @@ body .my_container {
   .pics_tile .image_holder {
     width: 900px;
     height: 98%;
-    margin-top: 0;
+    margin-top: 1%;
     clear: both;
     position: relative;
     overflow-x: hidden;
@@ -607,7 +607,7 @@ body .my_container {
   background-color: #bac788;
 }
 .coding_stuff_tile {
-  background-image: url("../img/myDraw/coding.png");
+  background-image: url("../img/myDraw/stationary.png");
   background-repeat: repeat;
   background-size: 120% auto;
   overflow-y: hidden;
