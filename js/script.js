@@ -27,13 +27,8 @@ $(".right_block").scroll(function() {
 });
 $("#top_tag").click(function(){
 	var w = window.innerWidth;
-	if(w<=900){
 		$('html,body').scrollTop(0);
 		$('#top_tag').fadeOut();
-	}else{
-		$('.right_block').scrollTop(0);
-		$('#top_tag').fadeOut();
-	}
 });
 $("div.flip").click(function(){
 	if($(this).hasClass("flipOn")||$(this).hasClass("flipOff")){
@@ -101,6 +96,25 @@ $(".navi_holder .slide_navi").click(function(){
 	}else{
 
 		$(container).find(".slide_holder").animate({scrollLeft:pjctleft},1500);
+	}
+	$(container).find(".slide_navi.active").removeClass("active");
+	$(this).addClass("active");
+});
+$(".vertical .navi_holder .slide_navi").click(function(){
+	var target = $(this).attr("class").split(" ")[1],//second class a=mark the image: slide_image_#
+		art_id = "."+"slide_art_"+target.split("_")[2],//"#"+$(this).attr("class").split(" ")[1],
+		pjct_id = "."+"slide_pjct_"+target.split("_")[2],
+		artList=[0,400,800],
+		artleft = artList[target.split("_")[2]],
+		pjct_height = $(".pics").height(),
+		pjctList=[0,pjct_height,pjct_height*2],
+		pjctup= pjctList[target.split("_")[2]],
+		container = $(this).parents(".slide_container");
+	if($(container).parent().hasClass("pics_tile")){
+		$(container).find(".slide_holder").animate({scrollTop:artup},1500);
+	}else{
+
+		$(container).find(".slide_holder").animate({scrollTop:pjctup},1500);
 	}
 	$(container).find(".slide_navi.active").removeClass("active");
 	$(this).addClass("active");
