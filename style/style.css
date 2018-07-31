@@ -49,7 +49,7 @@
   cursor: pointer;
 }
 .page-sec {
-  min-height: 300px;
+  min-height: 400px;
 }
 .sec-title {
   padding-left: 30px;
@@ -82,6 +82,51 @@
   border-bottom: 1px solid ;
   padding: 15px 25px;
   background-color: #0e0816;
+}
+.pributton {
+  background-color: #4717f6;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  font-family: 'SemiBold';
+  margin: 0 10px 0 0;
+  padding: 12px 40px 11px 28px;
+  text-decoration: none;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  border: 1px solid transparent;
+  transition: 0.6s !important;
+  -webkit-transition: 0.6s !important;
+  -moz-transition: 0.6s !important;
+}
+.pributton:hover {
+  background-color: #a239ca;
+  color: #fff;
+}
+.eq-height .item {
+  height: 350px;
+}
+.item div {
+  min-height: 300px;
+  margin: 5px 5% 5px 0;
+  width: 95%;
+  box-shadow: 1px 2px 1px 1px rgba(162, 57, 202, 0.3);
+}
+.dark p,
+.dark li {
+  color: #fff;
+}
+.p-l-35 {
+  padding-left: 35px;
+}
+.p-r-35 {
+  padding-right: 35px;
 }
 .m-t-5 {
   margin-top: 50px;
@@ -278,7 +323,7 @@
   /* max-width: 600px; */
   /* max-height: 215px; */
   margin: auto;
-  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px 1px rgba(162, 57, 202, 0.2);
 }
 .pics.horizantal div.slide_image {
   float: left;
@@ -380,7 +425,7 @@
   /* max-width: 600px; */
   /* max-height: 215px; */
   margin: auto;
-  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px 1px rgba(162, 57, 202, 0.2);
 }
 .pics.vertical div.slide_image {
   margin: 0px;
