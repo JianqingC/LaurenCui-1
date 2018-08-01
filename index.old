@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8"> 
+		<title>Lauren Jianqing Cui</title>
+		<link rel="stylesheet" href="./style/style.css"/>
+		<!-- Bootstrap-->
+		<link href="./js/lib/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		<!-- jQuery-->
+		<script type="text/javascript" src="./js/lib/jquery-3.1.1.js"></script>
+	</head>
+	<body>
+	<div class="my_container"> 
+		<div class="left_title left_title_m row">
+			<div class="profile_name col-md-4">
+				<image src="img/title/name_310.gif" alt="Lauren Cui"/>
+			</div>
+			<div class="profile_photo">
+				<image src="img/others/meNkunming_changed.jpg" class="img-circle" alt="Lauren Cui" />
+			</div>
+			<div class="contacts col-push-md-4 col-md-4">
+				<div>
+					<a href="mailto:lauren7cui@gmail.com"><image src="img/others/mail_500_h_2.gif" alt="email"/></a>
+					<span class="mytooltip" href="tel:1-510-309-9127"><image src="img/others/phone_500_h.gif" alt="phone" width="35" height="auto"/>
+					  <span class="mytooltiptext">1-510-309-9127</span>
+					</span>
+					<a href="https://www.instagram.com/laurencui/" target="_blank"><image src="img/others/instagram_500_r.gif" alt="instagram" width="35" height="auto"/></a>
+					<span class="mytooltip"><image class="pull-right" src="img/others/downloads_2.gif" width="35" height="auto" id="resume_pdf"/>
+					  <span class="mytooltiptext">click to open my resume</span>
+					</span>
+					
+				</div> 
+			</div>
+		</div><!-- left title block -->
+		<div class="right_block right_block_m"><!-- col-smd-8  -->
+			<div class="top_r" id="top_tag">
+				<image src="img/others/top_shadow.png" alt="top"/>
+			</div><!-- top -->
+			<div class="right_row right_row_m" id="prevJob">
+				<div class="pics">
+					<div class="slide_container">
+						<div class="slide_holder">
+							<div class="image_holder">
+							    <div class="slide_image slide_pjct_0">
+							    	<a href="https://laurencui.github.io/prev-work/inedx.html#/" target="blank"><img src="img/projects/login_nutri_0.png" alt="login"></a>
+							    </div>
+							    <div class="slide_image slide_pjct_1">
+							    	<a href="https://laurencui.github.io/prev-work/inedx.html#/" target="blank"><img src="img/projects/researcher_nutri_0.png" alt="researcher"></a>
+							    </div>
+							    <div class="slide_image slide_pjct_2">
+							    	<a href="https://laurencui.github.io/prev-work/inedx.html#/" target="blank"><img src="img/projects/basic_nutri_0.png" alt="basic"></a>
+							    </div>
+							</div>
+							<div class="navi_holder">
+							    <div class="slide_navi slide_image_0 active"></div>
+							    <div class="slide_navi slide_image_1"></div>
+							    <div class="slide_navi slide_image_2"></div>
+							</div>
+						</div><!-- slide_holder -->
+					</div><!-- slide_container -->
+				</div><!-- pics -->
+				<div class="desc" id="prev_p">
+					<h5>Previous Job. Oregon State University. 2014-2016.</h5>
+					<p>
+					Participated building the <a href="https://laurencui.github.io/prev-work/inedx.html#/" target="blank"><b class="highlight">user website</b></a>, which includes user account management and researcher data collecting. JavaScript, HTML and PHP are used. Angular 1 are used to implement the website interaction.<span class="link">more</span></p>
+					<div class="slide_d closed">
+						<p>Three types of user pages provided after user logged in. All basic pages are controlled by seperate Angular controllers. Meanwhile, Angular service is also used to demostrate the page routing in one page demo site. Authenticating of website was simulated by Angular service with local storage. The general site map is shown as below:</p>
+						<img src="img/projects/sitemap_n.gif" style="width: 60%; height:auto;" alt="structure of nutrition website">
+						<p>Meanwhile, the demo page also used the to simulate the user data while the real server is fed by the MySQL database. Two JSON files were genrated by MockJS library. D3 library is used to generate SVG graph for researcher and developer.</p>
+						<p>Also participating buidling the educational virtual world simulation and back-end server. 
+						<span class="wrap">wrap</span></p>
+					</div>
+				</div><!-- desc -->
+			</div><!-- right row prev job -->
+			<div class="right_row" id="moviePrj">
+				<div class="pics">
+					<div class="slide_container">
+						<div class="slide_holder">
+							<div class="image_holder">
+							    <div class="slide_image slide_pjct_0">
+							    	<a href="http://laurencui.github.io/JS_Proj-movie/" target="blank"><img src="img/projects/login_movie_1.png" alt="movie"/>
+							    	</a>
+							    </div>
+							    <div class="slide_image slide_pjct_1">
+							    	<a href="http://laurencui.github.io/JS_Proj-movie/" target="blank"><img src="img/projects/basic_movie_1.png" alt="basic"/></a>
+							    </div>
+							    <div class="slide_image slide_pjct_2">
+							    	<a href="http://laurencui.github.io/JS_Proj-movie/" target="blank"><img src="img/projects/profile_movie_1.png" alt="profile"/></a>
+							    </div>
+							</div>
+							<div class="navi_holder">
+							    <div class="slide_navi slide_image_0 active"></div>
+							    <div class="slide_navi slide_image_1"></div>
+							    <div class="slide_navi slide_image_2"></div>
+							</div>
+						</div><!-- slide_holder -->
+					</div><!-- slide_container -->
+				</div><!-- pics -->
+				<div class="desc" id="movie_p">
+					<a href="http://laurencui.github.io/JS_Proj-movie/" target="blank"><h5>Recommendation Website Project</h5></a>
+					<p>A website was build for academic project. User are able to review movies and get new movie recommendation based on user's preference. One Page structure ared used, where JavaScript Backbone framework were majorly used to finish all the interaction. <span class="link">more</span>
+					</p>
+					<div class="slide_d closed">
+						<p>The recommendation algorithm is developed based content filtering which are based on movie description and profile of the user preference. The movies in final list are picked from high similarity rate of all movies. The rate is computed from Jacrood corfficient formula:
+						<span>rate = (Present_overlapped weight)/(Abscence Data_ total weight) = Sum(p_i*v_i)/SQRT(Sum(p_i^2)*Sum(v_i^2)),p_i:user history rate for movie i, v_i:movie i description;</span>
+						The data from the demo website is generated manually, in JSON.
+						</p>
+						<p>According to Backbone framework, the side map as below:</p>
+						<img src="img/projects/sitemap_m.png" style="width: 60%; height:auto;" alt="structure of movie website">
+				        	<p>
+							Similarly, there is another one page website project, using React framework, <a href="https://laurencui.github.io/restaurant/">link</a>, where all data is generated by MockJS.(The location and coordinates are not real.)
+				        	<br/><span class="wrap">wrap</span>
+						</p>
+					</div><!-- wrapped content -->
+				</div><!-- desc -->
+			</div><!-- right row movie proj -->
+			<div class="right_row">
+				<div id="prgmr" class="board col_5">
+					<div class="flip flipOn programmer">
+					</div>
+					<div class="flip flipOff">
+						<h4>As A Programmer</h4>
+						<p>
+							<h5>Object Oriented language Experience</h5>
+								<ul>
+									<li>Thesis Project [Oregon State University]: developed a graphic matching system. Based on an open source Java library, the system is able to identify graphic feature from distored material images.</li>
+									<li>Summer Intership [China]: participated developing a GPS navigating system in Android.</li>
+									<li>Basic manual testing, and website testing by Selenium in python.</li>
+								</ul>
+							</p>
+					</div><!-- flip off -->
+				</div><!-- as a programmer -->
+				<div class="board col_4">
+					<div class="pics_tile coding_stuff_tile">
+						<div class="slide_container closed">
+							<div class="slide_holder">
+								<div class="image_holder">
+								    <div id="slide_image_1" class="slide_image slide_art_0">
+								    	<img src="img/myDraw/bluegirl.gif"/>
+								    </div>
+								    <div id="slide_image_2" class="slide_image slide_art_1">
+								    	<img src="img/myDraw/mushroomgirl.jpeg"/>
+								    </div>
+								    <div id="slide_image_3" class="slide_image slide_art_2">
+								    	<img src="img/myDraw/redmoon.jpg"/>
+								    </div>
+								</div>
+								<div class="navi_holder">
+								    <div class="slide_navi slide_image_0 active"></div>
+								    <div class="slide_navi slide_image_1"></div>
+								    <div class="slide_navi slide_image_2"></div>
+								</div>
+							</div><!-- slide_holder -->
+						</div><!-- slide_container -->
+					</div>
+				</div><!-- image gallery -->
+				<div id="art" class="board col_3">
+					<div class="flip flipOn art">
+					</div>
+					<div class="flip flipOff art">
+						<!-- <h4>As An Art Lover</h4>
+						<span class="flip_link">Back</span> -->
+					</div>
+				</div><!-- as an art lover -->
+			</div><!-- right row board block -->
+		</div><!-- right content block -->
+
+	</div><!-- the body row complete -->
+	</body>
+	<script type="text/javascript" src="./js/script.js"></script>
+</html>
