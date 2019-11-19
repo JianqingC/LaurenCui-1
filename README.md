@@ -1,6 +1,6 @@
 # About Me
 ### My Page
-(http://laurencui.github.io/JianqingCui/)
+(http://jianqingc.github.io/LaurenCui-1/)
 
 ## Project Link:
 <!-- [Bubble Decoration Demo](http://laurencui.github.io/bubble-lib/) -->
